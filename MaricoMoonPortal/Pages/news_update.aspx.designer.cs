@@ -13,24 +13,6 @@ namespace MySpace.Pages {
     public partial class news_update {
         
         /// <summary>
-        /// txt_search control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_search;
-        
-        /// <summary>
-        /// btn_btn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_btn;
-        
-        /// <summary>
         /// NewsCategoryRepeater control.
         /// </summary>
         /// <remarks>

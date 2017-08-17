@@ -18,14 +18,14 @@ namespace BussLayer
             return dnews.GetAllNewsDetails(id);
         }
 
-        public string InsertNewsInfo(string heading, string description)
+        public string InsertNewsInfo(string heading, string description,string strFrom)
         {
-            return dnews.InsertNewsInfo(heading, description);
+            return dnews.InsertNewsInfo(heading, description,strFrom);
         }
 
-        public int UpdateNewsInfo(string id, string heading, string description, string createddt)
+        public int UpdateNewsInfo(string id, string heading, string description, string createddt, string strFrom)
         {
-            return dnews.UpdateNewsInfo(id, heading, description, createddt);
+            return dnews.UpdateNewsInfo(id, heading, description, createddt, strFrom);
         }
 
         public DataSet GetSearchNewsLetter(string strSearchText)

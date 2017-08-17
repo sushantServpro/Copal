@@ -4,11 +4,6 @@ a {
     text-decoration: none;
 }
 
-.logo_img {
-    width: 100%;
-    height:auto;
-}
-
 .main {
     height: 100vh;
     background: url(../assets/login/background.png) no-repeat;
@@ -213,6 +208,8 @@ a {
 /*.content-wrapper { background: #fff; }*/
 
 /*sidebar style*/
+
+.sidebar { padding-bottom: 20px; }
 
 .skin-blue .wrapper,
 .skin-blue .main-sidebar,
@@ -545,13 +542,6 @@ a {
     border-right: 1px solid #ddd;
 }
 
-.announcements_sec .col-md-8 .row {
-    padding: 10px;
-    margin: 0;
-    border-bottom: 1px solid #00ccf9;
-    background: #fff;
-}
-
 .announcements_sec .col-md-4 h4 {
     padding: 20px 15px;
     margin: 0;
@@ -561,7 +551,7 @@ a {
 }
 
 .announcements_sec .col-md-4 ul li { 
-    padding: 0 15px; 
+    padding: 10px 15px; 
     border-left: 2px solid transparent;
     border-bottom: 1px solid #ddd;
 }
@@ -698,6 +688,20 @@ a {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+.rules_sec .nav_tabs {
+    border-left: 1px solid transparent;
+    background: #fff;
+}
+
+    .rules_sec .nav_tabs li { border-bottom: 1px solid #ddd; }
+
+.rules_sec .nav_tabs li.active a {
+    border-left: 1px solid #0890cc;
+    background: #e5f7ff;
+}
+
+
 
 .date_month { 
     color: #00ccf9; 
@@ -1193,8 +1197,8 @@ a {
 .survey_no a:hover { background: #e5f7ff; }
 
 .survey_no a img {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 98px;
 }
 
 .survey_no a h5 {
@@ -1268,9 +1272,13 @@ a {
 }
 
 .help_no {
+    width: 30.5%;
     padding: 0;
     border-bottom: 1px solid #ddd;
+    margin: 5px 15px;
 }
+
+.help_no:last-of-type { border: none; }
 
 .help_no h5 {
     margin-bottom: 5px;
@@ -1790,65 +1798,7 @@ a {
     }
 }
 
-@media screen and (max-width: 767px) and (min-width: 320px) {
-
-    .login-panel .input-group { margin-bottom: 10px; }
-
-    .skin-blue .main-header .logo .logo-lg { text-align: left; }
-    .skin-blue .main-header .logo .logo-lg img { width: auto; }
-
-    .prof_img,
-    .prof_name { text-align: center; }
-
-    .emp_detail { padding: 0 15px; }
-
-    .upt_boxc,
-    .announcements_sec .col-md-8,
-    .event_tab .nav-tabs { margin-top: 10px; }
-
-    .announcements_sec .col-md-4 { padding-right: 15px; }
-
-    .not_img { padding: 10px 0; }
-
-    .section-2 .nav-tabs .col-md-1 {width: 33%; }
-
-    .event_tab .col-md-6 { background: none; }
-
-    .ach_mnth_heading h4 { font-size: 23px; }
-
-    .foot { text-align: center; }
-
-    .survey_no a img {
-        width: 95px;
-        height: 95px;
-    }
-}
-
-@media screen and (max-width: 991px) and (min-width: 320px) {
-    .vacancy .col-md-4,
-    .rules_sec .col-md-3,
-    .announcements_sec .col-md-4 { padding-right: 15px; }
-    .grpActivity .col-md-4 { padding-right: 0; }
-
-    .vacancy .col-md-4 .tabs-left a {
-        padding-bottom: 5px; 
-        display: block;
-    }
-
-    .vacancy .col-md-4 .tabs-left a:last-of-type{ padding-bottom: 0; }
-
-    .vacancy .tab_desc { 
-        padding-left: 15px; 
-        margin-top: 10px;
-    }
-
-    .grpActivity .col-md-8 {
-        padding: 0;
-        margin-top: 10px;
-    }
-
-    .survey_no { margin-bottom: 10px; }
-
-    .rules_sec .col-md-9,
-    .announcements_sec .col-md-8 { margin-top: 10px; }
+.form-horizontal .form-group { 
+    margin-right: 0; 
+    margin-left: 0;
 }

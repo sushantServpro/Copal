@@ -166,6 +166,33 @@ namespace MySpace.Pages {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator DescriptionRequiredFieldValidatorion;
         
         /// <summary>
+        /// lblMPEFrom control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblMPEFrom;
+        
+        /// <summary>
+        /// txtMPEFrom control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtMPEFrom;
+        
+        /// <summary>
+        /// FromRequiredFieldValidation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator FromRequiredFieldValidation;
+        
+        /// <summary>
         /// btnsubmit control.
         /// </summary>
         /// <remarks>

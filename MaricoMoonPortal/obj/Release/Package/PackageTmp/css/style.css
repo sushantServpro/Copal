@@ -209,6 +209,8 @@ a {
 
 /*sidebar style*/
 
+.sidebar { padding-bottom: 20px; }
+
 .skin-blue .wrapper,
 .skin-blue .main-sidebar,
 .skin-blue .left-side { background: #fff; }
@@ -686,6 +688,20 @@ a {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+.rules_sec .nav_tabs {
+    border-left: 1px solid transparent;
+    background: #fff;
+}
+
+    .rules_sec .nav_tabs li { border-bottom: 1px solid #ddd; }
+
+.rules_sec .nav_tabs li.active a {
+    border-left: 1px solid #0890cc;
+    background: #e5f7ff;
+}
+
+
 
 .date_month { 
     color: #00ccf9; 
@@ -1780,4 +1796,9 @@ a {
     .contact_per_img .col-md-offset-1 {
         margin-left: 10.333333%; 
     }
+}
+
+.form-horizontal .form-group { 
+    margin-right: 0; 
+    margin-left: 0;
 }

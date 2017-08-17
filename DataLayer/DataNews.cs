@@ -24,23 +24,25 @@ namespace DataLayer
             return c.GetData("Proc_GetNewsLetterDetails", ref cmd, out ErrorMessage);
         }
 
-        public string InsertNewsInfo(string heading, string description)
+        public string InsertNewsInfo(string heading, string description, string strFrom)
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("NewsHeading", heading);
             cmd.Parameters.AddWithValue("NewsDescription", description);
+            cmd.Parameters.AddWithValue("From", strFrom);
             return c.Save("Proc_InsertNewsLetterDetails", ref cmd, out ErrorMessage);
         }
 
-        public int UpdateNewsInfo(string id, string heading, string description, string createddt)
+        public int UpdateNewsInfo(string id, string heading, string description, string createddt, string strFrom)
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("Id", id);
             cmd.Parameters.AddWithValue("NewsHeading", heading);
             cmd.Parameters.AddWithValue("NewsDescription", description);
-            cmd.Parameters.AddWithValue("CreatedDatetime", createddt);
+            //cmd.Parameters.AddWithValue("CreatedDatetime", createddt);
+            cmd.Parameters.AddWithValue("From", strFrom);
             return c.SaveData("Proc_UpdateNewsLetterdetails", ref cmd, out ErrorMessage);
         }
 

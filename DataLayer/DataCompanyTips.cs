@@ -35,9 +35,25 @@ namespace DataLayer
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@Heading",obj.Heading);
+            cmd.Parameters.AddWithValue("@Heading", obj.Heading);
             cmd.Parameters.AddWithValue("@Description", obj.Description);
             return c.SaveData("Proc_InsertCompanyTips", ref cmd, out strErrorMessage);
+        }
+
+        /// <summary>
+        /// Update Company Tips in Database
+        /// </summary>
+        /// <param name="obj">App Layer Object</param>
+        /// <returns>Update Status</returns>
+        public int UpdateCompanyTips(AppCompanyTips obj)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Id", obj.Id);
+            cmd.Parameters.AddWithValue("@Heading", obj.Heading);
+            cmd.Parameters.AddWithValue("@Description", obj.Description);
+            //cmd.Parameters.AddWithValue("@Flag", obj.Flag);
+            return c.SaveData("Proc_UpdateCompanyTips", ref cmd, out strErrorMessage);
         }
     }
 }

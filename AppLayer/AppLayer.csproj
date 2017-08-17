@@ -41,6 +41,8 @@
   <ItemGroup>
     <Compile Include="AppAccessPolicies.cs" />
     <Compile Include="AppAddAnnouncement.cs" />
+    <Compile Include="AppCompanyRules.cs" />
+    <Compile Include="AppCompanySurvey.cs" />
     <Compile Include="AppCorporateEvent.cs" />
     <Compile Include="AppGroupActivitySubTab.cs" />
     <Compile Include="AppGroupActivityTab.cs" />

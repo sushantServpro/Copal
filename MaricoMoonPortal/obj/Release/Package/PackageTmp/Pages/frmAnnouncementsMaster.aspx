@@ -316,10 +316,10 @@
 
                                             <asp:TemplateField HeaderText="From">
                                                 <ItemTemplate>
-                                                    <asp:Label ID="lblFrom" runat="server" Text='<%# Eval("From")%>'></asp:Label>
+                                                    <asp:Label ID="lblEditFrom" runat="server" Text='<%# Eval("From")%>'></asp:Label>
                                                 </ItemTemplate>
                                                 <EditItemTemplate>
-                                                    <asp:TextBox ID="txtFrom" runat="server" Text='<%# Eval("From")%>'></asp:TextBox>
+                                                    <asp:TextBox ID="txtEditFrom" runat="server" Text='<%# Eval("From")%>'></asp:TextBox>
                                                 </EditItemTemplate>
                                             </asp:TemplateField>
 

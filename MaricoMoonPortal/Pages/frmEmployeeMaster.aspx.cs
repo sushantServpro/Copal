@@ -36,8 +36,11 @@ namespace MySpace
         {
             pnlgrid.Visible = true;
             DataSet dt = empbuss.GetAllEmployees(empapp);
-            gvEmpDetails.DataSource = dt;
-            gvEmpDetails.DataBind();
+            if (dt.Tables.Count > 0)
+            {
+                gvEmpDetails.DataSource = dt;
+                gvEmpDetails.DataBind();
+            }
         }
 
         public void BindCity()

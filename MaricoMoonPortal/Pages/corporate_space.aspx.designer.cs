@@ -13,6 +13,15 @@ namespace MySpace.Pages {
     public partial class corporate_space {
         
         /// <summary>
+        /// ToolkitScriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.ToolkitScriptManager ToolkitScriptManager1;
+        
+        /// <summary>
         /// liEvent control.
         /// </summary>
         /// <remarks>
@@ -211,6 +220,42 @@ namespace MySpace.Pages {
         protected global::System.Web.UI.WebControls.Repeater RepeaterEvents;
         
         /// <summary>
+        /// imgSelectedEvent control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage imgSelectedEvent;
+        
+        /// <summary>
+        /// lblHeading control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblHeading;
+        
+        /// <summary>
+        /// spnEventDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl spnEventDate;
+        
+        /// <summary>
+        /// lbldescp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbldescp;
+        
+        /// <summary>
         /// wof control.
         /// </summary>
         /// <remarks>
@@ -308,6 +353,15 @@ namespace MySpace.Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater RepeaterNewsLetter;
+        
+        /// <summary>
+        /// lblSelEventFrom control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSelEventFrom;
         
         /// <summary>
         /// lblNewsHeader control.
@@ -454,6 +508,15 @@ namespace MySpace.Pages {
         protected global::System.Web.UI.WebControls.Repeater RepeaterGrpActTab;
         
         /// <summary>
+        /// ancPuzzleGame control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor ancPuzzleGame;
+        
+        /// <summary>
         /// ancid control.
         /// </summary>
         /// <remarks>
@@ -490,6 +553,24 @@ namespace MySpace.Pages {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl survey;
         
         /// <summary>
+        /// RepeaterCompSurvey control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater RepeaterCompSurvey;
+        
+        /// <summary>
+        /// RepeaterGoogleSurvery control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater RepeaterGoogleSurvery;
+        
+        /// <summary>
         /// feedback control.
         /// </summary>
         /// <remarks>
@@ -506,6 +587,87 @@ namespace MySpace.Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl tips;
+        
+        /// <summary>
+        /// RepeaterCompanyTips control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater RepeaterCompanyTips;
+        
+        /// <summary>
+        /// RepeaterGoogleTips control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater RepeaterGoogleTips;
+        
+        /// <summary>
+        /// lnkdummy control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkdummy;
+        
+        /// <summary>
+        /// MPECompanyTips control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.ModalPopupExtender MPECompanyTips;
+        
+        /// <summary>
+        /// pnlCompanyTipsPopup control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlCompanyTipsPopup;
+        
+        /// <summary>
+        /// lnkbtnclose control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkbtnclose;
+        
+        /// <summary>
+        /// lblMPEHeading control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMPEHeading;
+        
+        /// <summary>
+        /// lblMPECreatedDatetime control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMPECreatedDatetime;
+        
+        /// <summary>
+        /// pMPEDesc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl pMPEDesc;
         
         /// <summary>
         /// helpdesk control.

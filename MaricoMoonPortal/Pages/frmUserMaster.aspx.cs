@@ -38,8 +38,11 @@ namespace MySpace.Pages
         {
             pnlgrid.Visible = true;
             DataSet dt = bussuser.GetUserInfo(appuser);
-            gvUserMaster.DataSource = dt;
-            gvUserMaster.DataBind();
+            if (dt.Tables.Count > 0)
+            {
+                gvUserMaster.DataSource = dt;
+                gvUserMaster.DataBind();
+            }
         }
 
         public void BindRole()

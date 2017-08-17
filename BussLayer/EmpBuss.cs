@@ -52,5 +52,14 @@ namespace BussLayer
         {
             return empdata.GetEmpCode(obj);
         }
+
+        /// <summary>
+        /// Get EMployee Contacts from Database through DataLayer
+        /// </summary>
+        /// <returns>DataSet</returns>
+        public DataSet GetEmployeeContacts()
+        {
+            return empdata.GetEmployeeContacts();
+        }
     }
 }

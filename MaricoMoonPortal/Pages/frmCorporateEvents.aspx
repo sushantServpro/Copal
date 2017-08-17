@@ -315,6 +315,22 @@
                                         </ItemTemplate>
                                     </asp:TemplateField>--%>
 
+                                    <asp:TemplateField HeaderText="Event Date">
+                                        <ItemTemplate>
+                                            <asp:Label ID="lblEventDate" runat="server" Text='<%# Eval("EventDate")%>'></asp:Label>
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                            <%--<asp:TextBox ID="txtAchieverMonth" runat="server" Text='<%# Eval("AchieverMonth")%>'></asp:TextBox>--%>
+                                            <div class="input-group date">
+                                                <div class="input-group-addon">
+                                                    <i class="fa fa-calendar"></i>
+                                                </div>
+                                                <asp:TextBox class="form-control pull-right" ID="txtEditEventDate" runat="server" value='<%# Eval("EventDate")%>'></asp:TextBox>
+                                            </div>
+                                        </EditItemTemplate>
+                                    </asp:TemplateField>
+
+
                                     <asp:TemplateField HeaderText="Image Path">
                                         <ItemTemplate>
                                             <%--<asp:Label ID="lblImagePath" runat="server" Text='<%# Eval("ImagePath")%>'></asp:Label>--%>
@@ -439,6 +455,19 @@
                                                 <%--<asp:TextBox ID="txtsecquest" runat="server" class="form-control" placeholder="Security Question.."></asp:TextBox>--%>
                                             </div>
                                         </div>
+
+                                        <div class="form-group">
+                                    <label id="lblEventDate" runat="server" class="col-sm-2 control-label">Event Date</label>
+                                    <div class="input-group date">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input type="text" class="form-control pull-right" id="Eventdatepicker" runat="server">
+                                        <asp:RequiredFieldValidator ID="EventDateRequiredValidation" runat="server"
+                                            ErrorMessage="Required" ForeColor="Red" ControlToValidate="Eventdatepicker" Display="Dynamic" SetFocusOnError="True" ValidationGroup="EventValidationGrp"></asp:RequiredFieldValidator>
+                                    </div>
+
+                                </div>
 
                                     </div>
                                 </div>

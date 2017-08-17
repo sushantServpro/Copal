@@ -23,7 +23,7 @@ namespace DataLayer
             return c.GetData("Proc_GetAllImpNotification", ref cmd, out ErrorMessage);
         }
 
-        public int InsertImpNotification(string heading, string description, string strImagePath, string strImageName)
+        public int InsertImpNotification(string heading, string description, string strImagePath, string strImageName, string strFrom)
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.StoredProcedure;
@@ -31,6 +31,7 @@ namespace DataLayer
             cmd.Parameters.AddWithValue("Description", description);
             cmd.Parameters.AddWithValue("ImagePath", strImagePath);
             cmd.Parameters.AddWithValue("ImageName", strImageName);
+            cmd.Parameters.AddWithValue("From", strFrom);
             return c.SaveData("Proc_InsertImpNotificationDetails", ref cmd, out ErrorMessage);
         }
 
@@ -43,7 +44,7 @@ namespace DataLayer
             return c.SaveData("Proc_UpdateImpNotificationFlag", ref cmd, out ErrorMessage);
         }
 
-        public int UpdateNotificationDetails(string id, string heading, string descp, string strImagePath,string strImageName)
+        public int UpdateNotificationDetails(string id, string heading, string descp, string strImagePath,string strImageName,string strFrom)
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.StoredProcedure;
@@ -52,6 +53,7 @@ namespace DataLayer
             cmd.Parameters.AddWithValue("Description", descp);
             cmd.Parameters.AddWithValue("ImagePath", strImagePath);
             cmd.Parameters.AddWithValue("ImageName", strImageName);
+            cmd.Parameters.AddWithValue("From", strFrom);
             return c.SaveData("Proc_UpdateNotificationdetails", ref cmd, out ErrorMessage);
         }
     }

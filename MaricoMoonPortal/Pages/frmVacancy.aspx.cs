@@ -29,9 +29,13 @@ namespace MySpace.Pages
         public void BindGrid()
         {
             pnlgrid.Visible = true;
+            av.Id = "";
             DataSet dt = bv.GetVacancyInfo(av);
-            gvVacany.DataSource = dt;
-            gvVacany.DataBind();
+            if (dt.Tables.Count > 0)
+            {
+                gvVacany.DataSource = dt;
+                gvVacany.DataBind();
+            }
         }
 
         protected void btnsubmit_Click(object sender, EventArgs e)

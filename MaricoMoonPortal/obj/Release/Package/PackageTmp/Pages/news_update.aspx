@@ -40,12 +40,12 @@
         <div class="row section-2">
             <div class="container-fluid">
                 <div class="upcomming_activities tips news_update">
-                    <div class="row">
+                    <%--<div class="row">
                         <asp:TextBox ID="txt_search" runat="server" Width="500px" Height="30px"></asp:TextBox>
                         <asp:Button runat="server" Text="SEARCH" ID="btn_btn" Height="40px" OnClick="btn_btn_Click" CommandName="Search" />
 
                         <br />
-                    </div>
+                    </div>--%>
                     <%-- My Changes Start --%>
                     <div class="scrollmenu">
 

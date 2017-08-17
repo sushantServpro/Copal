@@ -499,6 +499,9 @@
     <Content Include="font\glyphicons-halflings-regular.svg" />
     <Content Include="font\icomoon\css\icomoon.css" />
     <Content Include="font\icomoon\fonts\icomoon.svg" />
+    <Content Include="Games\Puzzle\GamePuzzle.exe" />
+    <Content Include="Games\Puzzle\GamePuzzle.pdb" />
+    <Content Include="Games\Puzzle\GamePuzzle.vshost.exe" />
     <Content Include="Images\backgroundone.png" />
     <Content Include="Images\calender.png" />
     <Content Include="Images\logo.png" />
@@ -511,11 +514,14 @@
     <Content Include="Pages\corporate_space.aspx" />
     <Content Include="Pages\Dashboard.aspx" />
     <Content Include="Pages\frmAnnouncementsMaster.aspx" />
+    <Content Include="Pages\frmCompanyRule.aspx" />
     <Content Include="Pages\frmCorporateEvents.aspx" />
     <Content Include="Pages\frmEmployeeMaster.aspx" />
     <Content Include="Pages\frmImpNotification.aspx" />
     <Content Include="Pages\frmNewsletter.aspx" />
     <Content Include="Pages\frmRoleMaster.aspx" />
+    <Content Include="Pages\frmRSSRule.aspx" />
+    <Content Include="Pages\frmTips.aspx" />
     <Content Include="Pages\frmUserMaster.aspx" />
     <Content Include="Pages\frmVacancy.aspx" />
     <Content Include="Pages\frmWallOfFame.aspx" />
@@ -1494,6 +1500,13 @@
     <Compile Include="Pages\frmAnnouncementsMaster.aspx.designer.cs">
       <DependentUpon>frmAnnouncementsMaster.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\frmCompanyRule.aspx.cs">
+      <DependentUpon>frmCompanyRule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\frmCompanyRule.aspx.designer.cs">
+      <DependentUpon>frmCompanyRule.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\frmCorporateEvents.aspx.cs">
       <DependentUpon>frmCorporateEvents.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1528,6 +1541,20 @@
     </Compile>
     <Compile Include="Pages\frmRoleMaster.aspx.designer.cs">
       <DependentUpon>frmRoleMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmRSSRule.aspx.cs">
+      <DependentUpon>frmRSSRule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\frmRSSRule.aspx.designer.cs">
+      <DependentUpon>frmRSSRule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmTips.aspx.cs">
+      <DependentUpon>frmTips.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\frmTips.aspx.designer.cs">
+      <DependentUpon>frmTips.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\frmUserMaster.aspx.cs">
       <DependentUpon>frmUserMaster.aspx</DependentUpon>
@@ -1595,8 +1622,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config">
-      <SubType>Designer</SubType>
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="bootstrap\css\bootstrap.css.map" />
     <Content Include="bootstrap\css\bootstrap.min.css.map" />

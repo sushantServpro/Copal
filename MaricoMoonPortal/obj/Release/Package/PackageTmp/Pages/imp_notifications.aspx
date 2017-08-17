@@ -12,7 +12,7 @@
         <div class="row section-2">
             <div class="container-fluid">
                 <div class="row announcements_sec notification_sec">
-                    <div class="col-md-4">
+                    <div class="col-md-4" style="overflow-y: scroll; height: 500px;">
                         <h4>Notification List</h4>
                         <ul id="ul_notification" runat="server" class="sidebar-menu">
                             <asp:Repeater ID="NotificationRepeater" runat="server" OnItemDataBound="NotificationRepeater_ItemDataBound">
@@ -47,7 +47,7 @@
 
                         </ul>
                     </div>
-                    <div class="col-md-8 ">
+                    <div class="col-md-8 " style="overflow-y: scroll; height: 500px;">
                         <div class="tab-content">
                             <div class="tab-pane active" id="ancid" runat="server">
                                 <div class="row">

@@ -247,6 +247,33 @@ namespace MySpace.Pages {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator TimingRequiredFieldValidation;
         
         /// <summary>
+        /// lblEventDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblEventDate;
+        
+        /// <summary>
+        /// Eventdatepicker control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Eventdatepicker;
+        
+        /// <summary>
+        /// EventDateRequiredValidation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator EventDateRequiredValidation;
+        
+        /// <summary>
         /// btnsubmit control.
         /// </summary>
         /// <remarks>

@@ -15,7 +15,7 @@ namespace AppLayer
         public string SubTabName { get; set; }
         public string SubTabURL { get; set; }
         public string CreatedDate { get; set; }
-        public bool IsActive { get; set; }
+        public string IsActive { get; set; }
         public string ImageName { get; set; }
         public string ImagePath { get; set; }
     }

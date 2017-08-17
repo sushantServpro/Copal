@@ -52,8 +52,8 @@ namespace MySpace
                             liannouncement.Visible = true;
                             liImpNotification.Visible = true;
                             licorp.Visible = true;
-                            liinbox.Visible = true;
-                            limsg.Visible = true;
+                            //liinbox.Visible = true;
+                            //limsg.Visible = true;
                             liaccess.Visible = true;
                             linew.Visible = true;
                             lirules.Visible = true;
@@ -74,8 +74,8 @@ namespace MySpace
                             liannouncement.Visible = true;
                             liImpNotification.Visible = true;
                             licorp.Visible = true;
-                            liinbox.Visible = true;
-                            limsg.Visible = true;
+                            //liinbox.Visible = true;
+                            //limsg.Visible = true;
                             liaccess.Visible = true;
                             linew.Visible = true;
                             lirules.Visible = true;
@@ -95,8 +95,8 @@ namespace MySpace
                             liannouncement.Visible = true;
                             liImpNotification.Visible = true;
                             licorp.Visible = true;
-                            liinbox.Visible = true;
-                            limsg.Visible = true;
+                            //liinbox.Visible = true;
+                            //limsg.Visible = true;
                             liaccess.Visible = true;
                             linew.Visible = true;
                             lirules.Visible = true;
@@ -116,8 +116,8 @@ namespace MySpace
                             liannouncement.Visible = true;
                             liImpNotification.Visible = true;
                             licorp.Visible = false;
-                            liinbox.Visible = false;
-                            limsg.Visible = false;
+                            //liinbox.Visible = false;
+                            //limsg.Visible = false;
                             liaccess.Visible = false;
                             linew.Visible = false;
                             lirules.Visible = false;
@@ -137,8 +137,8 @@ namespace MySpace
                             liannouncement.Visible = true;
                             liImpNotification.Visible = true;
                             licorp.Visible = false;
-                            liinbox.Visible = false;
-                            limsg.Visible = false;
+                            //liinbox.Visible = false;
+                            //limsg.Visible = false;
                             liaccess.Visible = false;
                             linew.Visible = false;
                             lirules.Visible = false;

@@ -6,20 +6,20 @@
 <head id="Head1" runat="server">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-        <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Copal| Portal</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
-    <link rel="stylesheet" href="~/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/bootstrap/css/bootstrap.min.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="~/font/font-awesome-4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="~/font/font-awesome-4.5.0/css/font-awesome.min.css" />
     <!-- Ionicons -->
 
     <%--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">--%>
     <!-- daterange picker -->
-    <link rel="stylesheet" href="~/plugins/daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" href="~/plugins/daterangepicker/daterangepicker.css" />
     <!-- bootstrap datepicker -->
     <link rel="stylesheet" href="~/plugins/datepicker/datepicker3.css" />
     <link rel="Stylesheet" href="~/plugins/timepicker/bootstrap-timepicker.min.css" />
@@ -37,68 +37,69 @@
 </head>
 <body class="skin-blue sidebar-mini">
     <form id="form1" runat="server">
-    <!-- Site wrapper -->
-    <div class="wrapper">
+        <!-- Site wrapper -->
+        <div class="wrapper">
 
-        <header class="main-header">
-    <!-- Logo -->
-    <a class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini">
-              <%--<img src="../assets/dashboard/logo.png" />--%>
-              <img src="../assets/dashboard/logo.png" />
-          </span>
-          <span class="logo-lg">
-              <%--<img src="../assets/dashboard/logo_text.png" />--%>
-              <img src="../assets/dashboard/logo_text.png" />
-          </span>
-    </a>
-    <!-- Header Navbar: style can be found in header.less -->
-   <nav class="navbar navbar-static-top">
-      <!-- Sidebar toggle button-->
-<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-        <span class="sr-only">Toggle navigation</span>
-      </a>
-
-      <div class="navbar-custom-menu col-md-6">
-        <ul class="nav navbar-nav navbar-right row">
-
-            <li class="col-md-6 col-md-offset-3">
-                <div class="input-group search">
-                    <input type="text" name="s" id="search_top" class="form-control" placeholder="Search"/>
-                    <span class="input-group-btn">    
-                        <button type="submit" class="btn btn-default btn-search"><span class="glyphicon glyphicon-search"></span></button>
+            <header class="main-header">
+                <!-- Logo -->
+                <a class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini">
+                        <%--<img src="../assets/dashboard/logo.png" />--%>
+                        <img src="../assets/dashboard/logo.png" />
                     </span>
-                </div>
-            </li>
-            <li class="dropdown col-md-2 text-center">
-                <a href="#" data-toggle="modal" data-target="#myChatBox" class="new_msg">
-                    <img src="../assets/dashboard/chat_icon.png" />
+                    <span class="logo-lg">
+                        <%--<img src="../assets/dashboard/logo_text.png" />--%>
+                        <img src="../assets/dashboard/logo_text.png" />
+                    </span>
                 </a>
-            </li>
-          <!-- User Account: style can be found in dropdown.less -->
-          <li class="dropdown user user-menu col-md-1 text-center">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                 <i class="fa fa-caret-down" aria-hidden="true"></i>
-                
-              <span>
-                  <asp:Label ID="lblname" runat="server" class="hidden-xs"></asp:Label>
-              </span>
-            </a>
-            <ul class="dropdown-menu"> 
-              <!-- User image -->
-              <li class="user-header">
-                  <asp:Image ID="Image1" runat="server" Width="96px" Height="100px" class="img-circle" />
-                  <%--<img src="../assets/dashboard/profile.png" class="img-circle" alt="User Image"/>--%>
-                <p>
-                    <%--<asp:Label ID="lblUserName" runat="server"></asp:Label>--%>
-                      <asp:Label ID="lblUserName" Visible="true" runat="server" Text="Welcome, "></asp:Label>
-                  <br/><asp:Label ID="lbldesignation" runat="server"></asp:Label>
-                  <%--<small>Member since Nov. 2012</small>--%>
-                </p>
-              </li>
-              <!-- Menu Body -->
-         <%--     <li class="user-body">
+                <!-- Header Navbar: style can be found in header.less -->
+                <nav class="navbar navbar-static-top">
+                    <!-- Sidebar toggle button-->
+                    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                    </a>
+
+                    <div class="navbar-custom-menu col-md-6">
+                        <ul class="nav navbar-nav navbar-right row">
+
+                            <li class="col-md-6 col-md-offset-3">
+                                <div class="input-group search">
+                                    <input type="text" name="s" id="search_top" class="form-control" placeholder="Search" />
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-default btn-search"><span class="glyphicon glyphicon-search"></span></button>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="dropdown col-md-2 text-center">
+                                <a href="#" data-toggle="modal" data-target="#myChatBox" class="new_msg">
+                                    <img src="../assets/dashboard/chat_icon.png" />
+                                </a>
+                            </li>
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user user-menu col-md-1 text-center">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+
+                                    <span>
+                                        <asp:Label ID="lblname" runat="server" class="hidden-xs"></asp:Label>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="user-header">
+                                        <asp:Image ID="Image1" runat="server" Width="96px" Height="100px" class="img-circle" />
+                                        <%--<img src="../assets/dashboard/profile.png" class="img-circle" alt="User Image"/>--%>
+                                        <p>
+                                            <%--<asp:Label ID="lblUserName" runat="server"></asp:Label>--%>
+                                            <asp:Label ID="lblUserName" Visible="true" runat="server" Text="Welcome, "></asp:Label>
+                                            <br />
+                                            <asp:Label ID="lbldesignation" runat="server"></asp:Label>
+                                            <%--<small>Member since Nov. 2012</small>--%>
+                                        </p>
+                                    </li>
+                                    <!-- Menu Body -->
+                                    <%--     <li class="user-body">
                 <div class="row">
                   <div class="col-xs-4 text-center">
                     <a href="#">Followers</a>
@@ -112,130 +113,129 @@
                 </div>
                 <!-- /.row -->
               </li>--%>
-              <!-- Menu Footer-->
-              <li class="user-footer">
-                <div class="pull-left">
-                  <a href="#" class="btn btn-info btn-flat">Profile</a>
-                </div>
-                <div class="pull-right">
-                    <asp:Button ID="btnsubmit" runat="server" Text="Sign Out" OnClick="btnsubmit_Click" class="btn btn-default btn-flat" UseSubmitBehavior="false"/>
-                 <%-- <a href="#" >Sign out</a>--%>
-                </div>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-        <div class="modal fade chat_box" role="dialog" id="myChatBox">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header" style="padding: 0">
-                        <ul class="nav nav-tabs">
-                            <li class="active col-md-6">
-                                <a href="#msg" data-toggle="tab">Messages</a>
-                            </li>
-                            <li class="col-md-6">
-                                <a href="#cont" data-toggle="tab">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="modal-body">
-                        <div class="tab-content">
-                            <div class="tab-pane active messages" id="msg">
-                                <ul class="nav nav-tabs tabs-left">
-                                    <li>
-                                       <div data-target="#anc1" data-toggle="tab">
-                                            <div class="row">
-                                                <div class="col-md-3">
-                                                    <img src="../assets/chat/chat_thumb1.png" />
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <h5>Dinesh Thakur</h5>
-                                                    <span>Hi how are you ?</span>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div class="date_month">
-                                                        <span>12 Jan</span>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        <div class="pull-left">
+                                            <a href="#" class="btn btn-info btn-flat">Profile</a>
                                         </div>
-                                    </li>
-                                    <li>
-                                       <div data-target="#anc1" data-toggle="tab">
-                                            <div class="row">
-                                                <div class="col-md-3">
-                                                    <img src="../assets/chat/chat_thumb2.png" />
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <h5>Dinesh Thakur</h5>
-                                                    <span>Hi how are you ?</span>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div class="date_month">
-                                                        <span>13 Jan</span>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="pull-right">
+                                            <asp:Button ID="btnsubmit" runat="server" Text="Sign Out" OnClick="btnsubmit_Click" class="btn btn-default btn-flat" UseSubmitBehavior="false" />
+                                            <%-- <a href="#" >Sign out</a>--%>
                                         </div>
                                     </li>
                                 </ul>
-                            </div>
-                            <div class="tab-pane contacts" id="cont">
-                              <div class="cont_a">
-                                  <h4>A</h4>
-                                  <ul class="nav nav-tabs tabs-left">
-                                      <li>
-                                          <div data-target="#cont1" data-toggle="tab">
-                                              <div class="row">
-                                                  <div class="col-md-3 col-md-offset-2">
-                                                      <img src="../assets/chat/chat_thumb8.png" />
-                                                  </div>
-                                                  <div class="col-md-7">
-                                                      <h5>Akshata Yadav</h5>
-                                                      <span class="cont_loc">Andheri, India</span>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </li>
-                                       <li>
-                                          <div data-target="#cont2" data-toggle="tab">
-                                              <div class="row">
-                                                  <div class="col-md-3 col-md-offset-2">
-                                                      <img src="../assets/chat/chat_thumb5.png" />
-                                                  </div>
-                                                  <div class="col-md-7">
-                                                      <h5>Akshay Patil</h5>
-                                                      <span class="cont_loc">Mumbai, India</span>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </li>
-                                  </ul>
-                              </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div class="modal fade chat_box" role="dialog" id="myChatBox">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="padding: 0">
+                            <ul class="nav nav-tabs">
+                                <li class="active col-md-6">
+                                    <a href="#msg" data-toggle="tab">Messages</a>
+                                </li>
+                                <li class="col-md-6">
+                                    <a href="#cont" data-toggle="tab">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-body">
+                            <div class="tab-content">
+                                <div class="tab-pane active messages" id="msg">
+                                    <ul class="nav nav-tabs tabs-left">
+                                        <li>
+                                            <div data-target="#anc1" data-toggle="tab">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img src="../assets/chat/chat_thumb1.png" />
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h5>Dinesh Thakur</h5>
+                                                        <span>Hi how are you ?</span>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="date_month">
+                                                            <span>12 Jan</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div data-target="#anc1" data-toggle="tab">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img src="../assets/chat/chat_thumb2.png" />
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h5>Dinesh Thakur</h5>
+                                                        <span>Hi how are you ?</span>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="date_month">
+                                                            <span>13 Jan</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane contacts" id="cont">
+                                    <div class="cont_a">
+                                        <h4>A</h4>
+                                        <ul class="nav nav-tabs tabs-left">
+                                            <li>
+                                                <div data-target="#cont1" data-toggle="tab">
+                                                    <div class="row">
+                                                        <div class="col-md-3 col-md-offset-2">
+                                                            <img src="../assets/chat/chat_thumb8.png" />
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <h5>Akshata Yadav</h5>
+                                                            <span class="cont_loc">Andheri, India</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div data-target="#cont2" data-toggle="tab">
+                                                    <div class="row">
+                                                        <div class="col-md-3 col-md-offset-2">
+                                                            <img src="../assets/chat/chat_thumb5.png" />
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <h5>Akshay Patil</h5>
+                                                            <span class="cont_loc">Mumbai, India</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- page content wrapper -->
-        <div class="content-wrapper">
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
+            <!-- page content wrapper -->
+            <div class="content-wrapper">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
             </div>
-        <div class="clr"></div>
-        <%--    </div>--%>
-        <!-- page content wrapper -->
-        <!-- =============================================== -->
-        <aside class="main-sidebar">
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar" style="height: auto;">
-      <!-- search form -->
-    <%--  <form action="#" method="get" class="sidebar-form">
+            <div class="clr"></div>
+            <%--    </div>--%>
+            <!-- page content wrapper -->
+            <!-- =============================================== -->
+            <aside class="main-sidebar">
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar" style="height: auto;">
+                    <!-- search form -->
+                    <%--  <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
           <input type="text" name="q" class="form-control" placeholder="Search...">
               <span class="input-group-btn">
@@ -244,40 +244,45 @@
               </span>
         </div>
       </form>--%>
-      <!-- /.search form -->
-      <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu">
-                  <li id="li2" visible="false" runat="server"  class="treeview">
-          <a href="../Pages/Dashboard.aspx">
-              <i><img src="../assets/dashboard/dashboard_ontouch.png" /></i><span>Dashboard</span>
-          </a>
-          
-        </li>
-        <li id="liprofile" visible="false" runat="server"  class="treeview">
-          <a href="../Pages/profile.aspx">
-              <i><img src="../assets/dashboard/dashboard_ontouch.png" /></i><span>Profile</span>
-          </a>
-          
-        </li>
-        <li id="liannouncement" visible="false" runat="server" class="treeview">
-          <a href="../Pages/announcements.aspx">
-            <%--<a href="../Pages/frmAnnouncementsMaster.aspx">--%>
-              <i><img src="../assets/dashboard/announcement_ontouch.png" /></i><span>Announcements</span>
-          </a>
-          
-        </li>
-        <li id="liImpNotification" visible="false" runat="server" class="treeview">
-          <a href="../Pages/imp_notifications.aspx">
-              <i><img src="../assets/dashboard/impnotif_ontouch.png" /></i><span>Important Notifications</span>
-          </a>
-          
-        </li>
-        <li id="licorp" visible="false" runat="server" class="treeview">
-            <a href="../Pages/corporate_space.aspx">
-                <i><img src="../assets/dashboard/corp_ontouch.png" /></i><span>Corporate Space</span>
-            </a>
-        </li>
-        <li id="liinbox" visible="false" runat="server" class="treeview">
+                    <!-- /.search form -->
+                    <!-- sidebar menu: : style can be found in sidebar.less -->
+                    <ul class="sidebar-menu">
+                        <li id="li2" visible="false" runat="server" class="treeview">
+                            <a href="../Pages/Dashboard.aspx">
+                                <i>
+                                    <img src="../assets/dashboard/dashboard_ontouch.png" /></i><span>Dashboard</span>
+                            </a>
+
+                        </li>
+                        <li id="liprofile" visible="false" runat="server" class="treeview">
+                            <a href="../Pages/profile.aspx">
+                                <i>
+                                    <img src="../assets/dashboard/dashboard_ontouch.png" /></i><span>Profile</span>
+                            </a>
+
+                        </li>
+                        <li id="liannouncement" visible="false" runat="server" class="treeview">
+                            <a href="../Pages/announcements.aspx">
+                                <%--<a href="../Pages/frmAnnouncementsMaster.aspx">--%>
+                                <i>
+                                    <img src="../assets/dashboard/announcement_ontouch.png" /></i><span>Announcements</span>
+                            </a>
+
+                        </li>
+                        <li id="liImpNotification" visible="false" runat="server" class="treeview">
+                            <a href="../Pages/imp_notifications.aspx">
+                                <i>
+                                    <img src="../assets/dashboard/impnotif_ontouch.png" /></i><span>Important Notifications</span>
+                            </a>
+
+                        </li>
+                        <li id="licorp" visible="false" runat="server" class="treeview">
+                            <a href="../Pages/corporate_space.aspx">
+                                <i>
+                                    <img src="../assets/dashboard/corp_ontouch.png" /></i><span>Corporate Space</span>
+                            </a>
+                        </li>
+                        <%--<li id="liinbox" visible="false" runat="server" class="treeview">
             <a href="../Pages/inbox.aspx">
                 <i><img src="../assets/dashboard/inbox_ontouch.png" /></i><span>Inbox</span>
             </a>
@@ -286,87 +291,104 @@
             <a href="#">
                 <i><img src="../assets/dashboard/message_ontouch.png" /></i><span>Group Chats</span>
             </a>
-        </li>
-        <li id="liaccess" visible="false" runat="server" class="treeview">
-            <a href="../Pages/access.aspx">
-                <i><img src="../assets/dashboard/access_ontouch.png" /></i><span>Access</span>
-            </a>
-        </li>
-        <li id="linew" visible="false" runat="server" class="treeview">
-            <a href="../Pages/news_update.aspx">
-                <i><img src="../assets/dashboard/new_ontouch.png" /></i><span>News Updates</span>
-            </a>
-        </li>
-        <li id="lirules" visible="false" runat="server" class="treeview">
-            <a href="../Pages/Rules.aspx">
-                <i><img src="../assets/dashboard/rules_ontouch.png" /></i><span>Rules</span>
-            </a>
-        </li>
-        <li id="licontact" visible="false" runat="server" class="treeview">
-            <a href="../Pages/contacts.aspx">
-                <i><img src="../assets/dashboard/contacts_ontouch.png" /></i><span>Contacts</span>
-            </a>
-        </li>
-        <li id="lisetting" runat="server" visible="false" class="treeview">
-          <a href="#">
-            <i class="fa fa-edit"></i> <span>Settings</span>
-            <%--<span class="pull-right-container">
+        </li>--%>
+                        <li id="liaccess" visible="false" runat="server" class="treeview">
+                            <a href="../Pages/access.aspx">
+                                <i>
+                                    <img src="../assets/dashboard/access_ontouch.png" /></i><span>Access</span>
+                            </a>
+                        </li>
+                        <li id="linew" visible="false" runat="server" class="treeview">
+                            <a href="../Pages/news_update.aspx">
+                                <i>
+                                    <img src="../assets/dashboard/new_ontouch.png" /></i><span>News Updates</span>
+                            </a>
+                        </li>
+                        <li id="lirules" visible="false" runat="server" class="treeview">
+                            <a href="../Pages/Rules.aspx">
+                                <i>
+                                    <img src="../assets/dashboard/rules_ontouch.png" /></i><span>Rules</span>
+                            </a>
+                        </li>
+                        <li id="licontact" visible="false" runat="server" class="treeview">
+                            <a href="../Pages/contacts.aspx">
+                                <i>
+                                    <img src="../assets/dashboard/contacts_ontouch.png" /></i><span>Contacts</span>
+                            </a>
+                        </li>
+                        <li id="lisetting" runat="server" visible="false" class="treeview">
+                            <a href="#">
+                                <i class="fa fa-edit"></i><span>Settings</span>
+                                <%--<span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>--%>
-          </a>
-          <ul class="treeview-menu">
-                <%--<li id="liannounce" runat="server" visible="true"><a href="../Pages/frmAnnouncementsMaster.aspx"><i class="fa fa-circle-o"></i> Announcements Master</a></li>
+                            </a>
+                            <ul class="treeview-menu">
+                                <%--<li id="liannounce" runat="server" visible="true"><a href="../Pages/frmAnnouncementsMaster.aspx"><i class="fa fa-circle-o"></i> Announcements Master</a></li>
                 <li id="lium" runat="server" visible="false"><a href="../Pages/frmUserMaster.aspx"><i class="fa fa-circle-o"></i> User Master</a></li>--%>
-                <li id="lium" runat="server"><a href="../Pages/frmUserMaster.aspx"><i class="fa fa-circle-o"></i>User Master</a></li>
-                <li id="lirole" runat="server"><a href="../Pages/frmRoleMaster.aspx"><i class="fa fa-circle-o"></i>Role Master</a></li>
-                <li id="liemp" runat="server"><a href="../Pages/frmEmployeeMaster.aspx"><i class="fa fa-circle-o"></i>Employee Master</a></li>
-                <li id="liannounce" runat="server"><a href="../Pages/frmAnnouncementsMaster.aspx"><i class="fa fa-circle-o"></i>Announcements Master</a></li>
-                <li id="li1" visible="false" runat="server"><a href="../Pages/frmImpNotification.aspx"><i class="fa fa-circle-o"></i>Important Notification</a></li>
-              <li id="liAccessPolicy" visible="false" runat="server"><a href="../Pages/AccessPolicies.aspx"><i class="fa fa-circle-o"></i>Access Policies</a></li>
+                                <li id="lium" runat="server"><a href="../Pages/frmUserMaster.aspx"><i class="fa fa-circle-o"></i>User Master</a></li>
+                                <li id="lirole" runat="server"><a href="../Pages/frmRoleMaster.aspx"><i class="fa fa-circle-o"></i>Role Master</a></li>
+                                <li id="liemp" runat="server"><a href="../Pages/frmEmployeeMaster.aspx"><i class="fa fa-circle-o"></i>Employee Master</a></li>
+                                <li id="liannounce" runat="server"><a href="../Pages/frmAnnouncementsMaster.aspx"><i class="fa fa-circle-o"></i>Announcements Master</a></li>
+                                <li id="li1" visible="false" runat="server"><a href="../Pages/frmImpNotification.aspx"><i class="fa fa-circle-o"></i>Important Notification</a></li>
+                                <li id="liAccessPolicy" visible="false" runat="server"><a href="../Pages/AccessPolicies.aspx"><i class="fa fa-circle-o"></i>Access Policies</a></li>
 
-              <li class="treeview">
-          <a href="#">
-           <i class="fa fa-circle-o"></i> <span>Corporate Space Master</span>
-              </a>
-                      <ul  class="treeview-menu">
-                          <li id="li3" visible="true" runat="server"><a href="../Pages/frmCorporateEvents.aspx"><i class="fa fa-circle-o"></i>Events</a></li>
-                          <li id="li4" visible="true" runat="server"><a href="../Pages/frmWallOfFame.aspx"><i class="fa fa-circle-o"></i>Wall Of Fame</a></li>
-                          <li id="li5" visible="true" runat="server"><a href="../Pages/frmNewsletter.aspx"><i class="fa fa-circle-o"></i>Newsletter</a></li>
-                          <li id="li6" visible="true" runat="server"><a href="../Pages/frmVacancy.aspx"><i class="fa fa-circle-o"></i>Vacancy</a></li>
-                      </ul>
-                      </li>
-            </ul>
-        </li>
+                                <li class="treeview">
+                                    <a href="#">
+                                        <i class="fa fa-circle-o"></i><span>Corporate Space Master</span>
+                                    </a>
+                                    <ul class="treeview-menu">
+                                        <li id="li3" visible="true" runat="server"><a href="../Pages/frmCorporateEvents.aspx"><i class="fa fa-circle-o"></i>Events</a></li>
+                                        <li id="li4" visible="true" runat="server"><a href="../Pages/frmWallOfFame.aspx"><i class="fa fa-circle-o"></i>Wall Of Fame</a></li>
+                                        <li id="li5" visible="true" runat="server"><a href="../Pages/frmNewsletter.aspx"><i class="fa fa-circle-o"></i>Newsletter</a></li>
+                                        <li id="li6" visible="true" runat="server"><a href="../Pages/frmVacancy.aspx"><i class="fa fa-circle-o"></i>Vacancy</a></li>
+                                        <li id="li7" visible="true" runat="server"><a href="../Pages/frmTips.aspx"><i class="fa fa-circle-o"></i>Tips</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="treeview">
+                                    <a href="#">
+                                        <i class="fa fa-circle-o"></i><span>Rules Master</span>
+                                    </a>
+                                    <ul class="treeview-menu">
+                                        <li id="li8" visible="true" runat="server"><a href="../Pages/frmCompanyRule.aspx"><i class="fa fa-circle-o"></i>Company Rule</a></li>
+                                        <%--<li id="li9" visible="true" runat="server"><a href="../Pages/frmRSSRule.aspx"><i class="fa fa-circle-o"></i>RSS Rule</a></li>--%>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
 
 
-<%--        </li>--%>
-      </ul>
-    </section>
-    <!-- /.sidebar -->
-  </aside>
-        <!-- Left side column. contains the sidebar -->
+
+                        <%--        </li>--%>
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+            <!-- Left side column. contains the sidebar -->
 
 
-        <!-- =============================================== -->
+            <!-- =============================================== -->
 
 
-        <footer class="main-footer">
-            <div class="row">
-                <div class="col-sm-6 foot">
-                    <span>&copy; 2017 Copyright Text</span>
+            <footer class="main-footer">
+                <div class="row">
+                    <div class="col-sm-6 foot">
+                        <span>&copy; 2017 Copyright Text</span>
+                    </div>
+                    <div class="col-sm-6 foot text-right">
+                        <span>
+                            <a href="#" title="Disclaimer">Disclaimer</a>
+                            <a href="#" title="Privacy Policy">Privacy Policy</a>
+                        </span>
+                    </div>
                 </div>
-                <div class="col-sm-6 foot text-right">
-                    <span>
-                        <a href="#" title="Disclaimer">Disclaimer</a>
-                        <a href="#" title="Privacy Policy">Privacy Policy</a>
-                    </span>
-                </div>
-            </div>
-  </footer>
+            </footer>
 
 
-    </div>
-        </form>
+        </div>
+    </form>
     <!-- ./wrapper -->
 
     <!-- jQuery 2.2.3 -->
@@ -377,33 +399,33 @@
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
     <script src="../plugins/slimScroll/jquery.slimscroll.min.js"></script>
 
-<!-- Morris.js charts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="../plugins/morris/morris.min.js"></script>
-<!-- Sparkline -->
-<script src="../plugins/sparkline/jquery.sparkline.min.js"></script>
-<!-- jvectormap -->
-<script src="../plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="../plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-<!-- jQuery Knob Chart -->
-<script src="../plugins/knob/jquery.knob.js"></script>
-<!-- daterangepicker -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
-<script src="../plugins/daterangepicker/daterangepicker.js"></script>
-<!-- datepicker -->
+    <!-- Morris.js charts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="../plugins/morris/morris.min.js"></script>
+    <!-- Sparkline -->
+    <script src="../plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!-- jvectormap -->
+    <script src="../plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="../plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="../plugins/knob/jquery.knob.js"></script>
+    <!-- daterangepicker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    <script src="../plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- datepicker -->
     <script src="../plugins/datepicker/bootstrap-datepicker.js"></script>
     <!-- bootstrap time picker -->
-<script src="../plugins/timepicker/bootstrap-timepicker.min.js"></script>
-<!-- Bootstrap WYSIHTML5 -->
+    <script src="../plugins/timepicker/bootstrap-timepicker.min.js"></script>
+    <!-- Bootstrap WYSIHTML5 -->
 
-<script src="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
-<!-- Slimscroll -->
-<script src="../plugins/slimScroll/jquery.slimscroll.min.js"></script>
-<!-- FastClick -->
-<script src="../plugins/fastclick/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="../dist/js/app.min.js"></script>
-<script src="../Scripts/script.js"></script>
+    <script src="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+    <!-- Slimscroll -->
+    <script src="../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="../plugins/fastclick/fastclick.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../dist/js/app.min.js"></script>
+    <script src="../Scripts/script.js"></script>
     <script>
         $(function () {
             //add active class for different href menu

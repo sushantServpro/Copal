@@ -139,24 +139,6 @@ namespace MySpace {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl licorp;
         
         /// <summary>
-        /// liinbox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liinbox;
-        
-        /// <summary>
-        /// limsg control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl limsg;
-        
-        /// <summary>
         /// liaccess control.
         /// </summary>
         /// <remarks>
@@ -290,5 +272,23 @@ namespace MySpace {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl li6;
+        
+        /// <summary>
+        /// li7 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl li7;
+        
+        /// <summary>
+        /// li8 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl li8;
     }
 }

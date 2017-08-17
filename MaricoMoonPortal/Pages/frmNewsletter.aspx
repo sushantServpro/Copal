@@ -228,7 +228,7 @@
             <!-- END CUSTOM TABS -->
             <%--    </div>--%>
             <div class="box">
-                <div class="slimScrollDiv" style="position: relative; overflow: scroll; width: auto; height: 250px;">
+                <div class="slimScrollDiv" style="position: relative; overflow: scroll; width: auto; height: 400px;">
 
                     <asp:Panel ID="pnlgrid" runat="server" Visible="false">
                         <div class="box-header with-border">
@@ -286,6 +286,15 @@
                                         </ItemTemplate>
                                         <EditItemTemplate>
                                             <asp:TextBox ID="txtHeaderDescription" runat="server" Text='<%# Eval("NewsDescription")%>'></asp:TextBox>
+                                        </EditItemTemplate>
+                                    </asp:TemplateField>
+
+                                    <asp:TemplateField HeaderText="From">
+                                        <ItemTemplate>
+                                            <asp:Label ID="lblFrom" runat="server" Text='<%# Eval("From")%>'></asp:Label>
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="txtEditFrom" runat="server" Text='<%# Eval("From")%>'></asp:TextBox>
                                         </EditItemTemplate>
                                     </asp:TemplateField>
 
@@ -348,6 +357,15 @@
                                                    <input type="text" id="txtnewsdescp" runat="server" class="form-control" />
                                                     <%--<asp:TextBox ID="txtempcode" runat="server" class="form-control" placeholder="Employee Code.."></asp:TextBox>--%>
                                                     <asp:RequiredFieldValidator ID="DescriptionRequiredFieldValidatorion" runat="server" ErrorMessage="Required" ForeColor="Red" ControlToValidate="txtnewsdescp" Display="Dynamic" SetFocusOnError="True" ValidationGroup="NewsLeeterValidationGrp"></asp:RequiredFieldValidator>                                     
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label id="lblMPEFrom" runat="server" class="col-sm-3 control-label">From</label>
+                                                <div class="col-sm-8">
+                                                   <input type="text" id="txtMPEFrom" runat="server" class="form-control" />
+                                                    <%--<asp:TextBox ID="txtempcode" runat="server" class="form-control" placeholder="Employee Code.."></asp:TextBox>--%>
+                                                    <asp:RequiredFieldValidator ID="FromRequiredFieldValidation" runat="server" ErrorMessage="Required" ForeColor="Red" ControlToValidate="txtMPEFrom" Display="Dynamic" SetFocusOnError="True" ValidationGroup="NewsLeeterValidationGrp"></asp:RequiredFieldValidator>                                     
                                                 </div>
                                             </div>
                                         </div>

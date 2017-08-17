@@ -1,7 +1,158 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MySpace.Master" AutoEventWireup="true" CodeBehind="corporate_space.aspx.cs" Inherits="MySpace.Pages.corporate_space" %>
 
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .modalBackground {
+            background-color: Gray;
+            filter: alpha(opacity=80);
+            opacity: 0.8;
+            z-index: 10000;
+        }
+    </style>
+    <style type="text/css">
+        .modalBackground {
+            background-color: Black;
+            filter: alpha(opacity=90);
+            opacity: 0.8;
+        }
+
+        .modalPopup {
+            background-color: #FFFFFF;
+            border-width: 3px;
+            border-style: solid;
+            border-color: black;
+            padding-top: 10px;
+            padding-left: 10px;
+            width: 300px;
+            height: 140px;
+        }
+    </style>
     <script type="text/javascript">
+        function ShowModalPopup() {
+            $find("mpe").show();
+            return false;
+        }
+        function HideModalPopup() {
+            $find("mpe").hide();
+            return false;
+        }
+    </script>
+    <style type="text/css">
+        .paginationClass span {
+            font-weight: bold;
+        }
+    </style>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+
+        .GridPager a, .GridPager span {
+            display: block;
+            height: 30px;
+            width: 30px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .GridPager a {
+            background-color: #f5f5f5;
+            color: #969696;
+            border: 1px solid #969696;
+        }
+
+        .GridPager span {
+            background-color: #A1DCF2;
+            color: #000;
+            border: 1px solid #3AC0F2;
+        }
+    </style>
+    <style type="text/css">
+        .rounded_corners {
+            border: 1px solid #A1DCF2;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+            .rounded_corners td, .rounded_corners th {
+                border: 1px solid #A1DCF2;
+                font-family: Arial;
+                font-size: 10pt;
+                text-align: center;
+            }
+
+            .rounded_corners table table td {
+                border-style: none;
+            }
+
+        .pagination-ys {
+            /*display: inline-block;*/
+            padding-left: 0;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+            .pagination-ys table > tbody > tr > td {
+                display: inline;
+            }
+
+                .pagination-ys table > tbody > tr > td > a,
+                .pagination-ys table > tbody > tr > td > span {
+                    position: relative;
+                    float: left;
+                    padding: 8px 12px;
+                    line-height: 1.42857143;
+                    text-decoration: none;
+                    color: #dd4814;
+                    background-color: #ffffff;
+                    border: 1px solid #dddddd;
+                    margin-left: -1px;
+                }
+
+                .pagination-ys table > tbody > tr > td > span {
+                    position: relative;
+                    float: left;
+                    padding: 8px 12px;
+                    line-height: 1.42857143;
+                    text-decoration: none;
+                    margin-left: -1px;
+                    z-index: 2;
+                    color: #aea79f;
+                    background-color: #f5f5f5;
+                    border-color: #dddddd;
+                    cursor: default;
+                }
+
+                .pagination-ys table > tbody > tr > td:first-child > a,
+                .pagination-ys table > tbody > tr > td:first-child > span {
+                    margin-left: 0;
+                    border-bottom-left-radius: 4px;
+                    border-top-left-radius: 4px;
+                }
+
+                .pagination-ys table > tbody > tr > td:last-child > a,
+                .pagination-ys table > tbody > tr > td:last-child > span {
+                    border-bottom-right-radius: 4px;
+                    border-top-right-radius: 4px;
+                }
+
+                .pagination-ys table > tbody > tr > td > a:hover,
+                .pagination-ys table > tbody > tr > td > span:hover,
+                .pagination-ys table > tbody > tr > td > a:focus,
+                .pagination-ys table > tbody > tr > td > span:focus {
+                    color: #97310e;
+                    background-color: #eeeeee;
+                    border-color: #dddddd;
+                }
+    </style>
+    <script type="text/javascript">
+
         //function ShowNewsLetter() {
 
         //    $('li.col-md-1').on('click', function (e) {
@@ -27,6 +178,7 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" />
     <div class="container-fluid">
         <div class="row section-1">
             <div class="page-header">
@@ -100,123 +252,53 @@
                 <div class="tab-content">
                     <div class="tab-pane event_tab cmn_tab " id="divevent" runat="server">
                         <div class="row" id="hideEventDesc">
-                            <%--<div class="col-md-6 col-md-offset-3">
-                                <div class="latest_event">
-                                    <a href="#">
-                                        <img src="../assets/crop_space/event/banner..png" /></a>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-10">
-                                        <h5 class="event_headding">Annual Business Event 2017</h5>
-                                        <span class="event_venue">MBP, Mahape</span>
-                                    </div>
-                                    <div class="col-md-2 text-center">
-                                        <h3 class="date">31</h3>
-                                        <span class="month">July</span>
-                                    </div>
-                                </div>
-                                <div class="event_description">
+                            <div class="col-md-4" style="overflow-y: scroll; height: 300px;">
+                                <h4>Events</h4>
+                                <ul class="nav nav-tabs tabs-left">
+                                    <%-- Event Repeater Start --%>
+                                    <asp:Repeater ID="RepeaterEvents" runat="server">
+                                        <ItemTemplate>
+                                            <li id="liann" runat="server" class="nav nav-tabs tabs-left">
+                                                <a href='<%#Eval("Id") %>' id="ancliEvent" runat="server" onserverclick="ancliEvent_ServerClick1">
+                                                    <div class="col-md-2 not_img">
+                                                        <img src='<%#Eval("ImagePath") %>' style="width: 40px; height: 50px;" />
+                                                    </div>
+                                                    <div class="col-md-10">
+                                                        <h6 style="text-align: left;">
+                                                            <asp:Label Text='<%#Eval("HeaderName") %>' runat="server"></asp:Label><br />
+                                                            <asp:Label Text='<%#Eval("EventDate") %>' runat="server"></asp:Label>
 
-                                    <div class="col-md-10">
-                                        <span class="download_photo">Download photos : <a href="#" title="Download">abc</a></span>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        </p>
-                                    </div>
-                                    <div class="col-md-2 btn-show">
-                                        <button class="btn btn-info form-control" id="btn_show_event">Show</button>
-                                    </div>
-                                </div>
-                            </div>--%>
-
-                            <div class="col-md-6 col-md-offset-3">
-                                <%-- Event Repeater Start --%>
-                                <asp:Repeater ID="RepeaterEvents" runat="server">
-                                    <ItemTemplate>
-                                        <li id="liann" runat="server" class="nav nav-tabs tabs-left">
-                                            <div class="latest_event">
-                                                <img src='<%#Eval("ImagePath") %>' style="width: 100%; height: auto" />
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-10">
-                                                    <h5 class="event_headding"><%#Eval("HeaderName") %></h5>
-                                                    <span class="event_venue"><%#Eval("Location") %></span>
-                                                </div>
-                                                <div class="col-xs-2 text-center">
-                                                    <h3 class="date"><%#Eval("EventDate") %></h3>
-                                                    <span class="month"><%#Eval("EventMonth") %></span>
-                                                </div>
-                                            </div>
-                                            <div class="event_description">
-                                                <div class="col-md-9">
-                                                    <%--<span class="download_photo">Download photos : <a href="#" title="Download">abc</a></span>--%>
-                                                    <p>
-                                                        <%#Eval("HeaderDescription") %>
-                                                    </p>
-                                                </div>
-                                                <div class="col-md-3 btn-show">
-                                                    <asp:Button class="btn btn-info form-control" ID="btn_show_event" runat="server" OnClick="btn_show_event_Click" CommandArgument='<%#Eval("Id")%>' Text="Show"></asp:Button>
-                                                </div>
-                                            </div>
-                                            <div style="background-color: black;">
-                                            </div>
-                                        </li>
-                                    </ItemTemplate>
-                                </asp:Repeater>
-                                <%-- Event Repeater End --%>
+                                                        </h6>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                                    <%-- Event Repeater End --%>
+                                </ul>
                             </div>
-
-                        </div>
-                        <div class="row showEventDesc" id="showEventDesc">
-                            <div class="col-md-6">
-                                <div class="latest_event">
-                                    <a href="#">
-                                        <img src="../assets/crop_space/event/banner..png" /></a>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-9">
-                                        <h5 class="event_headding">Annual Business Event 2017</h5>
-                                    </div>
-                                    <div class="col-md-3 text-center">
-                                        <button class="btn btn-info form-control">Attend</button>
-                                    </div>
-                                </div>
-                                <div class="event_description">
-                                    <span class="download_photo">Download photos : <a href="#" title="Download">abc</a></span>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                </div>
-                            </div>
-                            <div class="col-md-5 event_timings">
-                                <div class="venue">
-                                    <h5>Venue</h5>
-                                    <div class="venue_loc">
-                                        <div class="venue_line1">
-                                            <span class="full_date">MBP, Mahape</span>
+                            <div class="col-md-8">
+                                <div class="tab-content" style="overflow-y: scroll; height: 300px;">
+                                    <div class="tab-pane active" id="Div1">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <img id="imgSelectedEvent" style="width: 60px; height: 70px;" runat="server" src="" alt="" />
+                                            </div>
+                                            <div class="col-md-10">
+                                                <h4>
+                                                    <asp:Label ID="lblHeading" runat="server" Text=""></asp:Label></h4>
+                                                <span id="spnEventDate" runat="server" class="anc_date"></span>
+                                            </div>
                                         </div>
-                                        <div class="venue_line2">
-                                            <span class="full_date">Navi Mumbai, PIN - 400 701</span>
+                                        <div class="news_content">
+                                            <asp:Label ID="lbldescp" runat="server" Text=""></asp:Label>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="act_post_time">
-                                    <h5>Timings</h5>
-                                    <div class="post_time">
-                                        <span class="full_date">31<sup>st</sup>July 2017</span>
-                                        <span class="time-span">11:00 AM - 2:00 PM</span>
-                                    </div>
-                                    <div class="post_time">
-                                        <span class="full_date">31<sup>st</sup>July 2017</span>
-                                        <span class="time-span">11:00 AM - 2:00 PM</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="tab-pane cmn_tab wof_tab" id="wof" runat="server">
                         <div class="row">
                             <%--<div class="col-md-5">
@@ -261,11 +343,11 @@
                                     <div class="tab-pane active" id="wof2">
                                         <div class="prof_info">
                                             <div class="row">
-                                                <div class="col-sm-3 prof_img">
+                                                <div class="col-md-3 prof_img">
                                                     <%--<img src="../assets/dashboard/profile.png" class="img-circle" alt="User Image">--%>
                                                     <img id="imgWallOfFameAchiever" runat="server" src='<%#Eval("ImagePath") %>' class="img-circle" alt="User Image">
                                                 </div>
-                                                <div class="col-sm-9 prof_desc">
+                                                <div class="col-md-9 prof_desc">
                                                     <div class="prof_name">
                                                         <%--<span>--%>
                                                         <%--<label>Neha Parikh</label></span>--%>
@@ -274,28 +356,28 @@
                                                     </div>
                                                     <div class="emp_detail row">
                                                         <ul class="nav navbar-nav row">
-                                                            <li class="col-xs-6">
+                                                            <li class="col-md-6">
                                                                 <%--<span>--%>
                                                                 <img src="../assets/crop_space/wall_of_fame/designation_blue.png" />
                                                                 <%--<label>Vice President</label>--%>
                                                                 <asp:Label ID="lblDesignation" runat="server"></asp:Label>
                                                                 <%--</span>--%>
                                                             </li>
-                                                            <li class="col-xs-6">
+                                                            <li class="col-md-6">
                                                                 <%--<span>--%>
                                                                 <img src="../assets/crop_space/wall_of_fame/location_blue.png" />
                                                                 <%--<label>Mumbai, India</label>--%>
                                                                 <asp:Label ID="lblAddress" runat="server"></asp:Label>
                                                                 <%--</span>--%>
                                                             </li>
-                                                            <li class="col-xs-6">
+                                                            <li class="col-md-6">
                                                                 <%--<span>--%>
                                                                 <img src="../assets/crop_space/wall_of_fame/department_blue.png" />
                                                                 <%--<label>Compliance</label>--%>
                                                                 <asp:Label ID="lblDepartment" runat="server"></asp:Label>
                                                                 <%--</span>--%>
                                                             </li>
-                                                            <li class="col-xs-6">
+                                                            <li class="col-md-6">
                                                                 <span>
                                                                     <img src="../assets/crop_space/wall_of_fame/private_blue.png" />
                                                                     <label>Private</label>
@@ -386,7 +468,7 @@
                     </div>--%>
                     <div class="tab-pane cmn_tab newsltr vacancy" id="newsltr" runat="server">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4" style="overflow-y: scroll; height: 450px;">
                                 <h4>Newsletters</h4>
 
                                 <ul class="nav nav-tabs tabs-left">
@@ -396,14 +478,18 @@
                                                 <li class="active">
                                                     <%--div data-target="#news1">--%>
                                                     <div class="row">
-                                                        <div class="col-md-2">
-                                                            <img src="../assets/crop_space/news_letters/newsletter_icon.png" />
+                                                        <div class="col-md-3">
+                                                            <img src="../assets/crop_space/news_letters/newsletter_icon.png" style="width: 30px; height: 30px;" />
                                                         </div>
-                                                        <div class="col-md-10">
-                                                            <h5>
+                                                        <div class="col-md-9">
+                                                            <p>
+                                                                <%--<asp:Label ID="lbldescription" runat="server" Text='<%# Eval("Description")%>'></asp:Label>--%>
+                                                                <asp:Label ID="lblFrom" runat="server" Text='<%# Eval("From")%>'></asp:Label>
+                                                            </p>
+                                                            <h6>
                                                                 <asp:Label ID="lblNewsLetterHeader" runat="server"><%#Eval("NewsHeading") %></asp:Label>
-                                                            </h5>
-                                                            <span id="spanNewsLetterDesc" runat="server"><%#Eval("NewsDescription") %></span>
+                                                            </h6>
+                                                            <asp:Label ID="lblCreatedDateTime" runat="server" Text='<%#Eval("CreatedDatetime") %>'>'></asp:Label>
                                                         </div>
                                                     </div>
                                                     <%--</div>--%>
@@ -414,13 +500,17 @@
                                 </ul>
 
                             </div>
-                            <div class="col-md-8 tab_desc">
+                            <div class="col-md-8 tab_desc" style="overflow-y: scroll; height: 450px;">
                                 <div class="tab-content">
                                     <%--<div class="tab-pane active" id="news1">--%>
                                     <div class="row">
                                         <div class="col-md-12">
+                                            <p>
+                                            </p>
                                             <h4>
-                                                <asp:Label ID="lblNewsHeader" runat="server"></asp:Label><span class="full-date" id="spnCreatedDateTime" runat="server"></span></h4>
+                                                <asp:Label ID="lblSelEventFrom" runat="server" Text=""></asp:Label><br />
+                                                <asp:Label ID="lblNewsHeader" runat="server"></asp:Label>
+                                                <span class="full-date" id="spnCreatedDateTime" runat="server"></span></h4>
                                         </div>
                                     </div>
                                     <div class="news_content">
@@ -563,7 +653,7 @@
                     </div>--%>
                     <div class="tab-pane cmn_tab vacancy" id="vacancy" runat="server">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4" style="overflow-y: scroll; height: 450px;">
                                 <h4>Vacancies</h4>
                                 <ul class="nav nav-tabs tabs-left">
                                     <asp:Repeater ID="RepeaterVacancy" runat="server">
@@ -590,7 +680,7 @@
                                     </asp:Repeater>
                                 </ul>
                             </div>
-                            <div class="col-md-8 tab_desc" id="divVacancyDetails" runat="server">
+                            <div class="col-md-8 tab_desc" id="divVacancyDetails" runat="server" style="overflow-y: scroll; height: 450px;">
                                 <div class="tab-content">
                                     <div class="tab-pane active">
                                         <div class="row">
@@ -917,6 +1007,9 @@
                                         </li>
                                     </ItemTemplate>
                                 </asp:Repeater>
+                                <li>
+                                    <a id="ancPuzzleGame" runat="server" onserverclick="ancPuzzleGame_ServerClick">Puzzle</a>
+                                </li>
                             </ul>
                         </div>
                         <%--<div class="tab-pane" id="act3">
@@ -930,7 +1023,7 @@
                                             <ItemTemplate>
                                                 <%--<li id="liGrpActSubTab" runat="server" class="nav nav-tabs tabs-left">--%>
 
-                                                <div class="col-xs-2  text-center" style="padding: 15px;">
+                                                <div class="col-md-2  text-center" style="padding: 15px;">
                                                     <a href='<%#Eval("SubTabURL") %>' target="_blank">
                                                         <span>
                                                             <img src='<%#Eval("ImagePath") %>' style="width: 50px; height: 50px;">
@@ -951,34 +1044,130 @@
                         <%--</div>--%>
                     </div>
 
-                    <div class="tab-pane cmn_tab survey" id="survey" runat="server">
+                    <%--<div class="tab-pane cmn_tab survey" id="survey" runat="server">
                         <h4>Surveys</h4>
                         <div class="row">
-                            <div class="col-md-6 survey_no">
+                            <div class="col-md-5 survey_no">
                                 <a href="#">
                                     <div class="row">
-                                        <div class="col-xs-4">
+                                        <div class="col-md-4">
                                             <img src="../assets/crop_space/surveys/thumb1.png" />
                                         </div>
-                                        <div class="col-xs-8">
+                                        <div class="col-md-8">
                                             <h5>Survey No. 1</h5>
                                             <p>Survey to check compony cuilture</p>
                                         </div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-6 survey_no">
+                            <div class="col-md-5 col-md-offset-1 survey_no">
                                 <a href="#">
                                     <div class="row">
-                                        <div class="col-xs-4">
+                                        <div class="col-md-4">
                                             <img src="../assets/crop_space/surveys/thumb2.png" />
                                         </div>
-                                        <div class="col-xs-8">
+                                        <div class="col-md-8">
                                             <h5>Survey No. 2</h5>
                                             <p>Survey to check compony cuilture</p>
                                         </div>
                                     </div>
                                 </a>
+                            </div>
+                        </div>
+                    </div>--%>
+                    <div class="tab-pane cmn_tab survey" id="survey" runat="server">
+
+                        <div class="upcomming_activities tips">
+                            <div class="row">
+                                <%--<div class="col-md-5 survey_no">
+                                <a href="#">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <h5>Company Survey</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-5 col-md-offset-1 survey_no">
+                                <a href="#">
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <h5>Google Survey</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>--%>
+                                <div class="col-md-3">
+                                    <h4>Surveys</h4>
+                                    <ul class="nav nav_tabs tabs-left">
+                                        <li class="active">
+                                            <a href="#" style="padding: 5px 10px;">
+                                                <div data-target="#CompanySurvey" data-toggle="tab">
+                                                    <div class="row">
+                                                        <div class="container-fluid act_content tips_content">
+                                                            <div class="col-md-12">
+                                                                <h5 class="activity_headding">Company Survey</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div data-target="#GoogleSurvey" data-toggle="tab">
+                                                    <div class="row">
+                                                        <div class="container-fluid act_content tips_content">
+                                                            <div class="col-md-12">
+                                                                <h5 class="activity_headding">Google Survey</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="tab-content" style="overflow-y: scroll; height: 300px;">
+                                        <div class="tab-pane active" id="CompanySurvey">
+                                            <ul style="padding: 0;">
+                                                <asp:Repeater ID="RepeaterCompSurvey" runat="server">
+                                                    <ItemTemplate>
+                                                        <li style="list-style: none;">
+                                                            <a id="ancliCompanySurvey" runat="server" href='<%#Eval("CompSurveyId") %>' onserverclick="ancliCompanyTips_ServerClick">
+
+
+                                                                <div class="col-md-12">
+                                                                    <h5><%#Eval("Heading") %></h5>
+                                                                    <span><%#Eval("CreatedDatetime") %></span>
+                                                                </div>
+
+
+                                                            </a>
+                                                        </li>
+                                                    </ItemTemplate>
+                                                </asp:Repeater>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane" id="GoogleSurvey">
+                                            <ul style="padding: 0;">
+                                                <asp:Repeater ID="RepeaterGoogleSurvery" runat="server">
+                                                    <ItemTemplate>
+                                                        <li style="list-style: none;">
+                                                            <a id="ancliGoogleSurvey" href='<%#Eval("Link") %>' target="_blank">
+                                                                <div class="col-md-12">
+                                                                    <h5><%#Eval("Heading") %></h5>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ItemTemplate>
+                                                </asp:Repeater>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1299,57 +1488,52 @@
                     <div class="tab-pane cmn_tab" id="tips" runat="server">
                         <div class="upcomming_activities tips">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <h4>Tips</h4>
-                                    <div class="write_to tips_down">
-                                        <div class="row">
-                                            <div class="col-md-9">
-                                                <img src="../assets/crop_space/tips/tips_updates_icon.png" />
-                                                <span>Tips Updates</span>
-                                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <ul class="nav nav_tabs tabs-left">
                                         <li class="active">
-                                            <div data-target="#tips1" data-toggle="tab">
-                                                <div class="row">
-                                                    <div class="container-fluid act_content tips_content">
-                                                        <div class="col-md-12">
-                                                            <h5 class="activity_headding">Company Tips</h5>
+                                            <a href="#" style="padding: 5px 10px;">
+                                                <div data-target="#tips1" data-toggle="tab">
+                                                    <div class="row">
+                                                        <div class="container-fluid act_content tips_content">
+                                                            <div class="col-md-12">
+                                                                <h5 class="activity_headding">Company Tips</h5>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </a>
                                         </li>
                                         <li>
-                                            <div data-target="#tips2" data-toggle="tab">
-                                                <div class="row">
-                                                    <div class="container-fluid act_content tips_content">
-                                                        <div class="col-md-12">
-                                                            <h5 class="activity_headding">Google Tips</h5>
+                                            <a href="#">
+                                                <div data-target="#tips2" data-toggle="tab">
+                                                    <div class="row">
+                                                        <div class="container-fluid act_content tips_content">
+                                                            <div class="col-md-12">
+                                                                <h5 class="activity_headding">Google Tips</h5>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
-                                <%--<div class="col-md-7">
+                                <div class="col-md-9">
                                     <div class="tab-content" style="overflow-y: scroll; height: 300px;">
                                         <div class="tab-pane active" id="tips1">
-                                            <ul>
+                                            <ul style="padding: 0;">
                                                 <asp:Repeater ID="RepeaterCompanyTips" runat="server">
                                                     <ItemTemplate>
                                                         <li style="list-style: none;">
-                                                            <a id="ancliCompanyTips" runat="server">
+                                                            <a id="ancliCompanyTips" runat="server" href='<%#Eval("Id") %>' onserverclick="ancliCompanyTips_ServerClick">
 
-                                                            <div class="row">
+
                                                                 <div class="col-md-12">
                                                                     <h5><%#Eval("Heading") %></h5>
-                                                                    <span class="tips_date"><%#Eval("CreatedDatetime") %></span>
+                                                                    <span><%#Eval("CreatedDatetime") %></span>
                                                                 </div>
-                                                            </div>
+
 
                                                             </a>
                                                         </li>
@@ -1358,7 +1542,7 @@
                                             </ul>
                                         </div>
                                         <div class="tab-pane" id="tips2">
-                                            <div class="row">
+                                            <%--<div class="row">
                                                 <div class="col-md-9 act_posts">
                                                     <div class="act_post_img">
                                                         <img src="../assets/crop_space/grp_act/activity_banner.png" />
@@ -1374,11 +1558,60 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div>--%>
+                                            <ul style="padding: 0;">
+                                                <asp:Repeater ID="RepeaterGoogleTips" runat="server">
+                                                    <ItemTemplate>
+                                                        <li style="list-style: none;">
+                                                            <a id="ancliGoogleTips" href='<%#Eval("Link") %>' target="_blank">
+                                                                <div class="col-md-12">
+                                                                    <h5><%#Eval("Heading") %></h5>
+                                                                    <%--<span class="tips_date"><%#Eval("CreatedDatetime") %></span>--%>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ItemTemplate>
+                                                </asp:Repeater>
+                                            </ul>
                                         </div>
                                     </div>
-                                </div>--%>
-                                <div class="col-md-7">
+
+                                    <asp:LinkButton ID="lnkdummy" runat="server"></asp:LinkButton>
+                                    <asp:ModalPopupExtender ID="MPECompanyTips" BehaviorID="" runat="server" PopupControlID="pnlCompanyTipsPopup" TargetControlID="lnkdummy" BackgroundCssClass="modalBackground" CancelControlID="lnkbtnclose">
+                                    </asp:ModalPopupExtender>
+                                    <div class="modal-content">
+                                        <asp:Panel ID="pnlCompanyTipsPopup" runat="server" CssClass="modalPopup" Style="display: none; margin-left: 2%; min-height: 95%; width: 500px;">
+                                            <div class="modal-header">
+                                                <asp:LinkButton ID="lnkbtnclose" data-dismiss="modal" Style="margin-left: 95%;" runat="server"><i class="fa fa-remove"></i></asp:LinkButton>
+                                                <h3 class="box-title">Tip Details</h3>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <!-- Horizontal Form -->
+                                                <!-- /.box-header -->
+                                                <!-- form start -->
+                                                <div class="form-horizontal">
+                                                    <div class="box-body">
+                                                        <div class="form-group">
+                                                            <h4 style="padding: 10px 0;">
+                                                                <asp:Label Text="" ID="lblMPEHeading" runat="server" />
+                                                                <asp:Label Text="" ID="lblMPECreatedDatetime" runat="server" Style="margin-top: 5px; display: block; font-size: 14px;" />
+                                                            </h4>
+
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <pre id="pMPEDesc" runat="server" style="background: none; border: none; border-radius: 0"></pre>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.box-body -->
+                                                </div>
+                                            </div>
+                                        </asp:Panel>
+                                    </div>
+                                </div>
+
+                                <%--<div class="col-md-7">
                                     <div class="tab-content">
                                         <div class="tab-pane active" id="tips1">
                                             <div class="row">
@@ -1440,7 +1673,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>--%>
                             </div>
                         </div>
                     </div>
@@ -1450,52 +1683,39 @@
                             <h4>Important Numbers</h4>
                             <div class="row">
                                 <div class="container-fluid">
-                                    <div class="col-sm-6 col-md-4">
-                                       <div class="help_no">
-                                            <h5>Police</h5>
-                                            <span>100</span>
-                                       </div>  
+                                    <div class="col-md-4 help_no">
+                                        <h5>Police</h5>
+                                        <span>100</span>
                                     </div>
-                                    <div class="col-sm-6 col-md-4">
-                                        <div class="help_no">
-                                            <h5>Ambulance</h5>
-                                            <span>102</span>
-                                        </div>
+                                    <div class="col-md-4 help_no">
+                                        <h5>Ambulance</h5>
+                                        <span>102</span>
                                     </div>
-                                    <div class="col-sm-6 col-md-4">
-                                        <div class="help_no">
-                                            <h5>Woman's Helpline</h5>
-                                            <span>181</span>
-                                        </div>
+                                    <div class="col-md-4 help_no">
+                                        <h5>Woman's Helpline</h5>
+                                        <span>181</span>
                                     </div>
-                                    <div class="col-sm-6 col-md-4">
-                                        <div class="help_no">
-                                            <h5>Fire</h5>
-                                            <span>101</span>
-                                        </div>
+                                    <div class="col-md-4 help_no">
+                                        <h5>Fire</h5>
+                                        <span>101</span>
                                     </div>
-                                    <div class="col-sm-6 col-md-4">
-                                        <div class="help_no">
-                                            <h5>Disaster Management</h5>
-                                            <span>108</span>
-                                        </div>
+                                    <div class="col-md-4 help_no">
+                                        <h5>Disaster Management</h5>
+                                        <span>108</span>
                                     </div>
-                                    <div class="col-sm-6 col-md-4">
-                                        <div class="help_no">
-                                            <h5>AIDS Helpline</h5>
-                                            <span>108</span>
-                                        </div>
+                                    <div class="col-md-4 help_no">
+                                        <h5>AIDS Helpline</h5>
+                                        <span>108</span>
                                     </div>
-                                    <div class="col-sm-6 col-md-4">
-                                        <div class="help_no">
-                                            <h5>Child Abuse Hotline</h5>
-                                            <span>1098</span>
-                                        </div>
+                                    <div class="col-md-4 help_no">
+                                        <h5>Child Abuse Hotline</h5>
+                                        <span>1098</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="tab-pane cmn_tab training survey" id="training" runat="server">
                         <h4>Training
                         </h4>
@@ -1503,10 +1723,10 @@
                             <div class="col-md-5 survey_no">
                                 <a href="#">
                                     <div class="row">
-                                        <div class="col-xs-4">
+                                        <div class="col-md-4">
                                             <img src="../assets/crop_space/training/training_thumb1.png" />
                                         </div>
-                                        <div class="col-xs-8">
+                                        <div class="col-md-8">
                                             <h5>Company Software Training</h5>
                                             <p>Training to learn company software</p>
                                         </div>
@@ -1516,10 +1736,10 @@
                             <div class="col-md-5 col-md-offset-1 survey_no">
                                 <a href="#">
                                     <div class="row">
-                                        <div class="col-xs-4">
+                                        <div class="col-md-4">
                                             <img src="../assets/crop_space/training/training_thumb2.png" />
                                         </div>
-                                        <div class="col-xs-8">
+                                        <div class="col-md-8">
                                             <h5>SAP Training</h5>
                                             <p>Training to learn company SAP software</p>
                                         </div>
@@ -1531,5 +1751,6 @@
                 </div>
             </div>
         </div>
+
     </div>
 </asp:Content>

@@ -88,21 +88,3 @@ D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\BussLayer\bin\D
 D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\BussLayer\obj\Debug\BussLayer.csprojResolveAssemblyReference.cache
 D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\BussLayer\obj\Debug\BussLayer.dll
 D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\BussLayer\obj\Debug\BussLayer.pdb
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\BussLayer\bin\Debug\BussLayer.dll
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\BussLayer\bin\Debug\BussLayer.pdb
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\BussLayer\bin\Debug\AppLayer.dll
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\BussLayer\bin\Debug\DataLayer.dll
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\BussLayer\bin\Debug\AppLayer.pdb
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\BussLayer\bin\Debug\DataLayer.pdb
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\BussLayer\obj\Debug\BussLayer.csprojResolveAssemblyReference.cache
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\BussLayer\obj\Debug\BussLayer.dll
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\BussLayer\obj\Debug\BussLayer.pdb
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\BussLayer\bin\Debug\BussLayer.dll
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\BussLayer\bin\Debug\BussLayer.pdb
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\BussLayer\bin\Debug\AppLayer.dll
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\BussLayer\bin\Debug\DataLayer.dll
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\BussLayer\bin\Debug\AppLayer.pdb
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\BussLayer\bin\Debug\DataLayer.pdb
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\BussLayer\obj\Debug\BussLayer.csprojResolveAssemblyReference.cache
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\BussLayer\obj\Debug\BussLayer.dll
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\BussLayer\obj\Debug\BussLayer.pdb

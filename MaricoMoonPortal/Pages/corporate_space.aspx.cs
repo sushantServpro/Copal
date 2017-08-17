@@ -4,7 +4,10 @@ using DataLayer;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
@@ -41,6 +44,13 @@ namespace MySpace.Pages
         BussCompanyTips bussCompTips = new BussCompanyTips();
         AppCompanyTips appCompTips = new AppCompanyTips();
 
+        BussGoogleTips bussGoogleTips = new BussGoogleTips();
+
+        BussCompanySurvey busCompSurv = new BussCompanySurvey();
+        AppCompanySurvey appCompSurv = new AppCompanySurvey();
+
+        BussGoogleSurvey busGoogSurv = new BussGoogleSurvey();
+
         #endregion
 
         //default Group Activity Image Path
@@ -56,7 +66,10 @@ namespace MySpace.Pages
                 getNewsLetters();
                 getVacancies();
                 getGroupActivityTabs();
-                //getCompanyTips();
+                getCompanyTips();
+                getGoogleTips();
+                getCompanySurvey();
+                getGoogleSurvey();
             }
         }
 
@@ -66,20 +79,21 @@ namespace MySpace.Pages
         public void getpreviousachievements()
         {
             DataSet dt = busswall.GetAllWallDetails(appwall);
+            if (dt.Tables[0].Rows.Count > 0)
+            {
+                imgWallOfFameAchiever.Src = dt.Tables[0].Rows[0]["ImagePath"].ToString();
+                lblWallOfFameName.Text = dt.Tables[0].Rows[0]["FullName"].ToString();
+                lblDesignation.Text = dt.Tables[0].Rows[0]["Designation"].ToString();
+                lblAddress.Text = dt.Tables[0].Rows[0]["Address"].ToString();
+                lblDepartment.Text = dt.Tables[0].Rows[0]["Department"].ToString();
+                lblWallofFameHeader.Text = dt.Tables[0].Rows[0]["Heading"].ToString();
 
-            imgWallOfFameAchiever.Src = dt.Tables[0].Rows[0]["ImagePath"].ToString();
-            lblWallOfFameName.Text = dt.Tables[0].Rows[0]["FullName"].ToString();
-            lblDesignation.Text = dt.Tables[0].Rows[0]["Designation"].ToString();
-            lblAddress.Text = dt.Tables[0].Rows[0]["Address"].ToString();
-            lblDepartment.Text = dt.Tables[0].Rows[0]["Department"].ToString();
-            lblWallofFameHeader.Text = dt.Tables[0].Rows[0]["Heading"].ToString();
+                string strAchieverDatime = dt.Tables[0].Rows[0]["AchieverMonth"].ToString();
+                DateTime AchieverDateTime = Convert.ToDateTime(strAchieverDatime);
+                lblyearnmonth.Text = AchieverDateTime.ToString("MMM, yyyy");
 
-            string strAchieverDatime = dt.Tables[0].Rows[0]["AchieverMonth"].ToString();
-            DateTime AchieverDateTime = Convert.ToDateTime(strAchieverDatime);
-            lblyearnmonth.Text = AchieverDateTime.ToString("MMMM dd, yyyy");
-
-            pWallofFameDescription.InnerText = dt.Tables[0].Rows[0]["Description"].ToString();
-
+                pWallofFameDescription.InnerText = dt.Tables[0].Rows[0]["Description"].ToString();
+            }
             //repeater1.DataSource = dt;
             //repeater1.DataBind();
         }
@@ -90,9 +104,12 @@ namespace MySpace.Pages
         public void getEvents()
         {
             AppCorpEvent.Id = "";
-            DataSet ds = BusCorpEvent.GetAllCorporateEvent(AppCorpEvent);
-            RepeaterEvents.DataSource = ds;
-            RepeaterEvents.DataBind();
+            DataSet dsCorpEvent = BusCorpEvent.GetAllCorporateEvent(AppCorpEvent);
+            if (dsCorpEvent.Tables.Count > 0)
+            {
+                RepeaterEvents.DataSource = dsCorpEvent;
+                RepeaterEvents.DataBind();
+            }
         }
 
         /// <summary>
@@ -102,8 +119,11 @@ namespace MySpace.Pages
         {
             AppNewLetter.Id = "";
             DataSet dsNewsLetterAllRecords = BusNewLetter.GetAllNewsDetails(AppNewLetter.Id);
-            RepeaterNewsLetter.DataSource = dsNewsLetterAllRecords;
-            RepeaterNewsLetter.DataBind();
+            if (dsNewsLetterAllRecords.Tables.Count > 0)
+            {
+                RepeaterNewsLetter.DataSource = dsNewsLetterAllRecords;
+                RepeaterNewsLetter.DataBind();
+            }
         }
 
         /// <summary>
@@ -114,8 +134,11 @@ namespace MySpace.Pages
             divVacancyDetails.Visible = false;
             AppVacancy.Id = "";
             DataSet dsVacancyRecords = BusVaccancy.GetVacancyInfo(AppVacancy);
-            RepeaterVacancy.DataSource = dsVacancyRecords;
-            RepeaterVacancy.DataBind();
+            if (dsVacancyRecords.Tables.Count > 0)
+            {
+                RepeaterVacancy.DataSource = dsVacancyRecords;
+                RepeaterVacancy.DataBind();
+            }
         }
 
         /// <summary>
@@ -124,19 +147,64 @@ namespace MySpace.Pages
         public void getGroupActivityTabs()
         {
             DataSet dsGrpActTabRecords = busGrpActTab.getGroupActivityTab("");
-            RepeaterGrpActTab.DataSource = dsGrpActTabRecords;
-            RepeaterGrpActTab.DataBind();
+            if (dsGrpActTabRecords.Tables.Count > 0)
+            {
+                RepeaterGrpActTab.DataSource = dsGrpActTabRecords;
+                RepeaterGrpActTab.DataBind();
+            }
         }
 
         /// <summary>
         /// Get Company Tips from Database through Bussiness Layer
         /// </summary>
-        //public void getCompanyTips()
-        //{
-        //    DataSet dsCompanyTips = bussCompTips.getCompanyTips("");
-        //    RepeaterCompanyTips.DataSource = dsCompanyTips;
-        //    RepeaterCompanyTips.DataBind();
-        //}
+        public void getCompanyTips()
+        {
+            DataSet dsCompanyTips = bussCompTips.getCompanyTips("");
+            if (dsCompanyTips.Tables.Count > 0)
+            {
+                RepeaterCompanyTips.DataSource = dsCompanyTips;
+                RepeaterCompanyTips.DataBind();
+            }
+        }
+
+        /// <summary>
+        /// Get Google Tips link from database through Business Layer
+        /// </summary>
+        public void getGoogleTips()
+        {
+            DataSet dsGoogleTipsRecords = bussGoogleTips.getGoogleTips();
+            if (dsGoogleTipsRecords.Tables.Count > 0)
+            {
+                RepeaterGoogleTips.DataSource = dsGoogleTipsRecords;
+                RepeaterGoogleTips.DataBind();
+            }
+        }
+
+        /// <summary>
+        /// Get Company Survey from Database
+        /// </summary>
+        public void getCompanySurvey()
+        {
+            DataSet dsCompSurv = busCompSurv.getCompanySurvey("");
+            if (dsCompSurv.Tables.Count > 0)
+            {
+                RepeaterCompSurvey.DataSource = dsCompSurv;
+                RepeaterCompSurvey.DataBind();
+            }
+        }
+
+        /// <summary>
+        /// Get Google Survey from Database
+        /// </summary>
+        public void getGoogleSurvey()
+        {
+            DataSet dsGoogSurv = busGoogSurv.getGoogleSurvey();
+            if (dsGoogSurv.Tables.Count > 0)
+            {
+                RepeaterGoogleSurvery.DataSource = dsGoogSurv;
+                RepeaterGoogleSurvery.DataBind();
+            }
+        }
 
         /// <summary>
         /// Load Previous Achievements
@@ -179,6 +247,7 @@ namespace MySpace.Pages
             lblNewsHeader.Text = dsSelectedNewsLetter.Tables[0].Rows[0]["NewsHeading"].ToString();
             spnNewLetterDesc.InnerText = dsSelectedNewsLetter.Tables[0].Rows[0]["NewsDescription"].ToString();
             spnCreatedDateTime.InnerText = dsSelectedNewsLetter.Tables[0].Rows[0]["CreatedDatetime"].ToString();
+            lblSelEventFrom.Text = dsSelectedNewsLetter.Tables[0].Rows[0]["From"].ToString();
         }
 
         /// <summary>
@@ -317,6 +386,48 @@ namespace MySpace.Pages
             removeActiveClass();
             liTraining.Attributes.Add("class", liTraining.Attributes["class"] + " active");
             training.Attributes.Add("class", training.Attributes["class"] + " active");
+        }
+
+        protected void ancliCompanyTips_ServerClick(object sender, EventArgs e)
+        {
+            pnlCompanyTipsPopup.Visible = true;
+            string strTipId = ((HtmlAnchor)sender).HRef;
+            DataSet dsSelectedCompanyTip = bussCompTips.getCompanyTips(strTipId);
+            lblMPEHeading.Text = dsSelectedCompanyTip.Tables[0].Rows[0]["Heading"].ToString();
+            pMPEDesc.InnerText = dsSelectedCompanyTip.Tables[0].Rows[0]["Description"].ToString();
+            lblMPECreatedDatetime.Text = dsSelectedCompanyTip.Tables[0].Rows[0]["CreatedDatetime"].ToString();
+            MPECompanyTips.Show();
+        }
+
+        protected void ancliEvent_ServerClick1(object sender, EventArgs e)
+        {
+            string strEventId = ((HtmlAnchor)sender).HRef;
+            AppCorpEvent.Id = strEventId;
+            DataSet dsSelectedEvent = BusCorpEvent.GetAllCorporateEvent(AppCorpEvent);
+
+            imgSelectedEvent.Src = dsSelectedEvent.Tables[0].Rows[0]["ImagePath"].ToString();
+            lblHeading.Text = dsSelectedEvent.Tables[0].Rows[0]["HeaderName"].ToString();
+            spnEventDate.InnerText = dsSelectedEvent.Tables[0].Rows[0]["EventDate"].ToString();
+            lbldescp.Text = dsSelectedEvent.Tables[0].Rows[0]["HeaderDescription"].ToString();
+
+        }
+
+        protected void ancPuzzleGame_ServerClick(object sender, EventArgs e)
+        {
+            string strpath = "../Games/Puzzle/GamePuzzle.exe";
+            Process myProcess = new Process();
+            string temp = HttpContext.Current.Server.MapPath(strpath);
+            try
+            {
+                myProcess.StartInfo.UseShellExecute = false;
+                myProcess.StartInfo.FileName = temp;
+                myProcess.StartInfo.CreateNoWindow = true;
+                myProcess.Start();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

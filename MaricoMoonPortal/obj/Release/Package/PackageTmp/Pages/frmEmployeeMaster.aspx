@@ -505,17 +505,17 @@
                         <h3 class="box-title">New Employee </h3>
                     </div>
                     <%-- <div class="box box-info">--%>
-                    <div class="modal-body">
+                    <div class="modal-body" >
                         <!-- Horizontal Form -->
                         <!-- form start -->
                         <div class="container-fluid">
-                            <div class="row">
+                            <div class="row" style="overflow-y:scroll; height:600px;">
 
                                 <div class="form-group">
                                     <label id="lblimg" runat="server" class="col-sm-2 control-label">Image Upload</label>
 
                                     <div class="col-sm-10">
-                                        <asp:FileUpload ID="ImageUpload" runat="server" />
+                                        <asp:FileUpload ID="ImageUpload" runat="server"/>
                                         <%-- <br /><br />--%>
                                         <asp:Label runat="server" ID="StatusLabel" Text="Upload status: " />
                                     </div>
@@ -563,7 +563,7 @@
                                     <label>Address </label>
 
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                        <span class="input-group-addon"><i class="fa fa-home"></i></span>
                                         <%--<input type="password" class="form-control" id="inputPassword3" placeholder="Password">--%>
                                         <asp:TextBox ID="txtaddress" runat="server" class="form-control" placeholder="Address.."></asp:TextBox>
                                     </div>
@@ -629,7 +629,7 @@
 
                                     <div class="input-group">
 
-                                        <span class="input-group-addon"><i class="fa fa-users"></i></span>
+                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
                                         <%--<input type="password" class="form-control" id="inputPassword3" placeholder="Password">--%>
                                         <asp:DropDownList ID="ddlcountry" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlcountry_SelectedIndexChanged" CssClass="form-control"></asp:DropDownList>
 

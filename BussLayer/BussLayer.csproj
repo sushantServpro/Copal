@@ -42,8 +42,12 @@
   <ItemGroup>
     <Compile Include="BussAccessPolicies.cs" />
     <Compile Include="BussAnnouncement.cs" />
+    <Compile Include="BussCompanyRules.cs" />
+    <Compile Include="BussCompanySurvey.cs" />
     <Compile Include="BussCompanyTips.cs" />
     <Compile Include="BussCorporateEvent.cs" />
+    <Compile Include="BussGoogleSurvey.cs" />
+    <Compile Include="BussGoogleTips.cs" />
     <Compile Include="BussGroupActivity.cs" />
     <Compile Include="BussGroupActivitySubTab.cs" />
     <Compile Include="BussGroupActivityTab.cs" />

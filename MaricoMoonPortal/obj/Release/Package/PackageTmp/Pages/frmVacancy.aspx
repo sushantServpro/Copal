@@ -387,7 +387,7 @@
                             <!-- Horizontal Form -->
                             <!-- /.box-header -->
                             <!-- form start -->
-                            <div class="form-horizontal">
+                            <div class="form-horizontal" style="overflow-y:scroll; height:380px;">
                                 <div class="box-body">
                                     <div class="form-group">
                                         <div class="form-group">

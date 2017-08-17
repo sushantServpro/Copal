@@ -23,14 +23,14 @@ namespace BussLayer
         }
 
 
-        public int InsertCorporateEvent(string ImageName, string ImagePath, string HeaderName, string HeaderDescription, string Location, string Timings)
+        public int InsertCorporateEvent(string ImageName, string ImagePath, string HeaderName, string HeaderDescription, string Location, string Timings,DateTime EventDate)
         {
-            return dann.InsertCorporateEvent(ImageName, ImagePath, HeaderName, HeaderDescription, Location, Timings);
+            return dann.InsertCorporateEvent(ImageName, ImagePath, HeaderName, HeaderDescription, Location, Timings,EventDate);
         }
 
-        public int UpdateCorporateEvent(string ID, string ImageName, string ImagePath, string HeaderName, string HeaderDescription, string Location, string Timings)
+        public int UpdateCorporateEvent(string ID, string ImageName, string ImagePath, string HeaderName, string HeaderDescription, string Location, string Timings, DateTime Eventdate)
         {
-            return dann.UpdateCorporateEvent(ID, ImageName, ImagePath, HeaderName, HeaderDescription, Location, Timings);
+            return dann.UpdateCorporateEvent(ID, ImageName, ImagePath, HeaderName, HeaderDescription, Location, Timings, Eventdate);
         }
     }
 }

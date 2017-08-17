@@ -68,17 +68,3 @@ D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\DataLayer\bin\D
 D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
 D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\DataLayer\obj\Debug\DataLayer.dll
 D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\DataLayer\obj\Debug\DataLayer.pdb
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\DataLayer\bin\Debug\DataLayer.dll
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\DataLayer\bin\Debug\DataLayer.pdb
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\DataLayer\bin\Debug\AppLayer.dll
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\DataLayer\bin\Debug\AppLayer.pdb
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\DataLayer\obj\Debug\DataLayer.dll
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\DataLayer\obj\Debug\DataLayer.pdb
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\DataLayer\bin\Debug\DataLayer.dll
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\DataLayer\bin\Debug\DataLayer.pdb
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\DataLayer\bin\Debug\AppLayer.dll
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\DataLayer\bin\Debug\AppLayer.pdb
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\DataLayer\obj\Debug\DataLayer.dll
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\DataLayer\obj\Debug\DataLayer.pdb

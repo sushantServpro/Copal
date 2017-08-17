@@ -12,7 +12,7 @@
         <div class="row section-2">
             <div class="container-fluid">
                 <div class="row announcements_sec notification_sec">
-                    <div class="col-md-4">
+                    <div class="col-md-4" style="overflow-y: scroll; height: 500px;">
                         <h4>Notification List</h4>
                         <ul id="ul_notification" runat="server" class="sidebar-menu">
                             <asp:Repeater ID="NotificationRepeater" runat="server" OnItemDataBound="NotificationRepeater_ItemDataBound">
@@ -20,12 +20,12 @@
                                     <asp:HiddenField ID="HDId" runat="server" Value='<%# Eval("Id")%>' />
                                     <li id="liann" runat="server" class="nav nav-tabs tabs-left">
                                         <a href='<%# Eval("Id")%>' id="a" runat="server" onserverclick="a_ServerClick" class="row">
-                                            <div class="col-xs-2 not_img">
+                                            <div class="col-md-2 not_img">
                                                 <%--<img src="../assets/dashboard/impnotif_read.png" />--%>
                                                 <%--<img src="../assets/dashboard/impnotif_read.png" />--%>
-                                                <img src="<%# Eval("ImagePath") %>" alt="" />
+                                                <img src="<%# Eval("ImagePath") %>" style="width: 60px; height: 70px;" alt="" />
                                             </div>
-                                            <div class="col-xs-10">
+                                            <div class="col-md-10">
                                                 <p>
                                                     <%--<asp:Label ID="lbldescription" runat="server" Text='<%# Eval("Description")%>'></asp:Label>--%>
                                                     <asp:Label ID="lblFrom" runat="server" Text='<%# Eval("From")%>'></asp:Label>
@@ -47,7 +47,7 @@
 
                         </ul>
                     </div>
-                    <div class="col-md-8 ">
+                    <div class="col-md-8 " style="overflow-y: scroll; height: 500px;">
                         <div class="tab-content">
                             <div class="tab-pane active" id="ancid" runat="server">
                                 <div class="row">

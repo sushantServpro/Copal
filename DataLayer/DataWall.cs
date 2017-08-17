@@ -52,5 +52,6 @@ namespace DataLayer
             cmd.Parameters.AddWithValue("HeaderName", strsearch);
             return c.GetData("Proc_GetSearchWallOfFame", ref cmd, out ErrorMessage);
         }
+
     }
 }

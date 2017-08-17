@@ -107,7 +107,7 @@
                                 </li>
                             </ul>
                         </div>--%>
-                    <div class="col-md-4">
+                    <div class="col-md-4" style="overflow-y: scroll; height: 500px;">
 
                         <h4>Announcements List</h4>
 
@@ -145,7 +145,7 @@
                         <asp:Button ID="btnreadallannouncements" runat="server" Text="Read All" class="btn btn-info" OnClick="btnreadallannouncements_Click"></asp:Button>
                     </div>--%>
                     </div>
-                    <div class="col-md-8 ">
+                    <div class="col-md-8 " style="overflow-y: scroll; height: 500px;">
                         <div class="tab-content">
                             <div class="tab-pane active" id="ancid" runat="server">
                                 <div class="row">

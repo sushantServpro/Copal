@@ -35,9 +35,13 @@ namespace MySpace.Pages
         public void BindGrid()
         {
             pnlgrid.Visible = true;
-            DataSet dt = busswall.GetAllWallDetails(appwall);
-            gvWallOfFame.DataSource = dt;
-            gvWallOfFame.DataBind();
+            //DataSet dt = busswall.GetAllWallDetails(appwall);
+            DataSet dt = busswall.SearchWalloffameInfo("");
+            if (dt.Tables.Count > 0)
+            {
+                gvWallOfFame.DataSource = dt;
+                gvWallOfFame.DataBind();
+            }
         }
 
         public void BindEmpCode()

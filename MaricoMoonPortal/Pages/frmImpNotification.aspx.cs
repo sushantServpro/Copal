@@ -33,8 +33,11 @@ namespace MySpace.Pages
         {
             // pnlgrid.Visible = true;
             DataSet dt = bussimp.GetAllImpNotifications("");
-            gvimpnotification.DataSource = dt;
-            gvimpnotification.DataBind();
+            if (dt.Tables.Count > 0)
+            {
+                gvimpnotification.DataSource = dt;
+                gvimpnotification.DataBind();
+            }
         }
 
         protected void lbtnedit_Click(object sender, EventArgs e)
@@ -85,6 +88,7 @@ namespace MySpace.Pages
             TextBox txtheading = gvimpnotification.Rows[e.RowIndex].FindControl("txtheading") as TextBox;
             TextBox txtdescp = gvimpnotification.Rows[e.RowIndex].FindControl("txtdescp") as TextBox;
             FileUpload FileUpload1 = (FileUpload)gvimpnotification.Rows[e.RowIndex].FindControl("FileUpload1");
+            TextBox txtEditFrom = gvimpnotification.Rows[e.RowIndex].FindControl("txtEditFrom") as TextBox;
 
             string filename = "";
             string strImagePath = "";
@@ -108,7 +112,7 @@ namespace MySpace.Pages
                 strImagePath = img.ImageUrl;
             }
             //Updating records
-            int ds = bussimp.UpdateNotificationDetails(id.Text, txtheading.Text, txtdescp.Text, strImagePath, filename);
+            int ds = bussimp.UpdateNotificationDetails(id.Text, txtheading.Text, txtdescp.Text, strImagePath, filename,txtEditFrom.Text);
 
             //Setting the EditIndex property to -1 to cancel the Edit mode in Gridview  
             gvimpnotification.EditIndex = -1;
@@ -171,7 +175,7 @@ namespace MySpace.Pages
             {
                 StatusLabel.Text = "Upload status: The file could not be uploaded. The following error occured: " + ex.Message;
             }
-            int s = bussimp.InsertImpNotification(txtheading.Text, txtdescp.Text, strImagePath, filename);
+            int s = bussimp.InsertImpNotification(txtheading.Text, txtdescp.Text, strImagePath, filename,txtFrom.Text);
             BindGrid();
             clear();
         }

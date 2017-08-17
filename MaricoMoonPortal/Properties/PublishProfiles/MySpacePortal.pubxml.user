@@ -191,7 +191,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/26/2017 11:44:51</publishTime>
     </File>
     <File Include="assets/Corp_space/Event/Events_1.png">
-      <publishTime>08/05/2017 15:56:02</publishTime>
+      <publishTime>08/13/2017 17:02:46</publishTime>
     </File>
     <File Include="assets/Corp_space/Event/event_log.png">
       <publishTime>05/29/2017 12:10:38</publishTime>
@@ -773,22 +773,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/21/2017 15:59:06</publishTime>
     </File>
     <File Include="bin/AppLayer.dll">
-      <publishTime>08/10/2017 20:12:19</publishTime>
+      <publishTime>08/12/2017 20:23:52</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
       <publishTime>04/20/2017 16:29:14</publishTime>
     </File>
     <File Include="bin/BussLayer.dll">
-      <publishTime>08/10/2017 20:12:20</publishTime>
+      <publishTime>08/13/2017 19:04:24</publishTime>
     </File>
     <File Include="bin/DataLayer.dll">
-      <publishTime>08/10/2017 20:12:20</publishTime>
+      <publishTime>08/13/2017 19:04:23</publishTime>
     </File>
     <File Include="bin/GoogleSearchAPI.dll">
       <publishTime>03/19/2010 15:46:46</publishTime>
     </File>
     <File Include="bin/MaricoMoonPortal.dll">
-      <publishTime>08/10/2017 20:28:28</publishTime>
+      <publishTime>08/13/2017 19:04:25</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>11/30/2016 16:07:42</publishTime>
@@ -914,7 +914,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/20/2017 16:37:52</publishTime>
     </File>
     <File Include="css/style.css">
-      <publishTime>08/10/2017 16:34:10</publishTime>
+      <publishTime>08/12/2017 19:01:09</publishTime>
     </File>
     <File Include="css/_all-skins.min.css">
       <publishTime>04/20/2017 16:37:52</publishTime>
@@ -1202,7 +1202,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/10/2017 13:58:01</publishTime>
     </File>
     <File Include="MySpace.Master">
-      <publishTime>08/10/2017 11:35:11</publishTime>
+      <publishTime>08/12/2017 19:23:22</publishTime>
     </File>
     <File Include="packages.config">
       <publishTime>07/21/2017 16:02:36</publishTime>
@@ -1214,46 +1214,55 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/10/2017 13:46:32</publishTime>
     </File>
     <File Include="Pages/announcements.aspx">
-      <publishTime>08/10/2017 18:38:23</publishTime>
+      <publishTime>08/12/2017 13:28:29</publishTime>
     </File>
     <File Include="Pages/contacts.aspx">
-      <publishTime>07/05/2017 16:06:07</publishTime>
+      <publishTime>08/12/2017 12:24:19</publishTime>
     </File>
     <File Include="Pages/corporate_space.aspx">
-      <publishTime>08/10/2017 20:16:18</publishTime>
+      <publishTime>08/12/2017 20:58:57</publishTime>
     </File>
     <File Include="Pages/Dashboard.aspx">
       <publishTime>08/10/2017 18:17:48</publishTime>
     </File>
     <File Include="Pages/frmAnnouncementsMaster.aspx">
-      <publishTime>08/10/2017 13:54:55</publishTime>
+      <publishTime>08/13/2017 15:03:23</publishTime>
+    </File>
+    <File Include="Pages/frmCompanyRule.aspx">
+      <publishTime>08/12/2017 16:49:29</publishTime>
     </File>
     <File Include="Pages/frmCorporateEvents.aspx">
-      <publishTime>08/03/2017 15:22:19</publishTime>
+      <publishTime>08/13/2017 17:06:32</publishTime>
     </File>
     <File Include="Pages/frmEmployeeMaster.aspx">
-      <publishTime>07/31/2017 11:01:16</publishTime>
+      <publishTime>08/12/2017 19:46:48</publishTime>
     </File>
     <File Include="Pages/frmImpNotification.aspx">
-      <publishTime>08/07/2017 14:14:27</publishTime>
+      <publishTime>08/13/2017 15:11:30</publishTime>
     </File>
     <File Include="Pages/frmNewsletter.aspx">
-      <publishTime>08/05/2017 16:27:04</publishTime>
+      <publishTime>08/12/2017 21:24:44</publishTime>
     </File>
     <File Include="Pages/frmRoleMaster.aspx">
       <publishTime>08/03/2017 12:01:49</publishTime>
+    </File>
+    <File Include="Pages/frmRSSRule.aspx">
+      <publishTime>08/12/2017 16:14:02</publishTime>
+    </File>
+    <File Include="Pages/frmTips.aspx">
+      <publishTime>08/12/2017 11:21:33</publishTime>
     </File>
     <File Include="Pages/frmUserMaster.aspx">
       <publishTime>08/05/2017 14:37:02</publishTime>
     </File>
     <File Include="Pages/frmVacancy.aspx">
-      <publishTime>08/03/2017 14:30:28</publishTime>
+      <publishTime>08/12/2017 21:15:45</publishTime>
     </File>
     <File Include="Pages/frmWallOfFame.aspx">
       <publishTime>08/05/2017 16:13:48</publishTime>
     </File>
     <File Include="Pages/imp_notifications.aspx">
-      <publishTime>08/10/2017 18:42:46</publishTime>
+      <publishTime>08/12/2017 13:29:26</publishTime>
     </File>
     <File Include="Pages/inbox.aspx">
       <publishTime>07/05/2017 16:06:08</publishTime>
@@ -1262,13 +1271,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/31/2017 11:52:35</publishTime>
     </File>
     <File Include="Pages/news_update.aspx">
-      <publishTime>08/03/2017 11:02:07</publishTime>
+      <publishTime>08/12/2017 12:20:57</publishTime>
     </File>
     <File Include="Pages/profile.aspx">
       <publishTime>07/05/2017 16:06:08</publishTime>
     </File>
     <File Include="Pages/Rules.aspx">
-      <publishTime>08/08/2017 14:26:50</publishTime>
+      <publishTime>08/12/2017 18:42:27</publishTime>
     </File>
     <File Include="plugins/bootstrap-slider/bootstrap-slider.js">
       <publishTime>04/20/2017 17:15:34</publishTime>
@@ -3950,7 +3959,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/20/2017 16:58:28</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/10/2017 20:28:32</publishTime>
+      <publishTime>08/13/2017 19:04:31</publishTime>
     </File>
   </ItemGroup>
 </Project>

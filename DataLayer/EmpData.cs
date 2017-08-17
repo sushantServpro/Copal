@@ -119,5 +119,16 @@ namespace DataLayer
             SqlCommand cmd = new SqlCommand();
             return c.GetData("Proc_GetEmployeeCode", ref cmd, out ErrorMessage);
         }
+
+        /// <summary>
+        /// Get Employee Contact details from database
+        /// </summary>
+        /// <returns>DataSet</returns>
+        public DataSet GetEmployeeContacts()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.StoredProcedure;
+            return c.GetData("Proc_GetEmployeeContacts", ref cmd, out ErrorMessage);
+        }
     }
 }

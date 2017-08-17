@@ -38,12 +38,4 @@ D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\AppLayer\bin\De
 D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\AppLayer\bin\Debug\AppLayer.pdb
 D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\AppLayer\obj\Debug\AppLayer.dll
 D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\AppLayer\obj\Debug\AppLayer.pdb
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\AppLayer\bin\Debug\AppLayer.dll
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\AppLayer\bin\Debug\AppLayer.pdb
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\AppLayer\obj\Debug\AppLayer.dll
-F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\AppLayer\obj\Debug\AppLayer.pdb
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\AppLayer\bin\Debug\AppLayer.dll
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\AppLayer\bin\Debug\AppLayer.pdb
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\AppLayer\obj\Debug\AppLayer.csprojResolveAssemblyReference.cache
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\AppLayer\obj\Debug\AppLayer.dll
-D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\AppLayer\obj\Debug\AppLayer.pdb
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\AppLayer\obj\Debug\AppLayer.csprojResolveAssemblyReference.cache

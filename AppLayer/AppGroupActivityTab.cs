@@ -14,6 +14,6 @@ namespace AppLayer
         public string TabName { get; set; }
         public string TabDescription { get; set; }
         public string CreatedDate { get; set; }
-        public bool IsActive { get; set; }
+        public string IsActive { get; set; }
     }
 }

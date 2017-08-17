@@ -21,23 +21,23 @@
              <div class="container-fluid">
                  <div class="row">
                      <div class="login-box">
-                    <div class="login-logo col-md-8 col-md-offset-2 text-center">
+                    <div class="login-logo text-center">
                         <a href="#" title="Copal">
-                            <img src="../assets/login/logo.png" class="logo_img"/>
+                            <img src="../assets/login/logo.png" />
 
                         </a>
                     </div>
                     <!-- /.login-logo -->
                     <div class="login-box-body">
                         <div class="row login-panel">
-                            <div class="col-sm-6 col-md-4 col-md-offset-2">
+                            <div class="col-md-4 col-md-offset-2">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-user fa-2x"></i></span>
                                     <asp:TextBox ID="txtUserName" runat="server" class="form-control" placeholder="UserName"></asp:TextBox>
                                     <%--<input type="email" class="form-control" placeholder="Email">--%>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-4">
+                            <div class="col-md-4">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-lock fa-2x"></i></span>
                                     <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" class="form-control" placeholder="Password"></asp:TextBox>
@@ -47,7 +47,7 @@
                         </div>
                         <div class="row">
                              <!-- /.col -->
-                            <div class="col-sm-6 col-sm-offset-6">
+                            <div class="col-md-6 col-md-offset-6">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <a href="#" title="Forget Password" class="forget_password">Forget Password</a>

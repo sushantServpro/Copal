@@ -107,7 +107,7 @@
                                 </li>
                             </ul>
                         </div>--%>
-                    <div class="col-md-4">
+                    <div class="col-md-4" style="overflow-y: scroll; height: 500px;">
 
                         <h4>Announcements List</h4>
 
@@ -117,11 +117,11 @@
 
                                     <li id="liann" runat="server" class="nav nav-tabs tabs-left">
                                         <a id="a" href='<%# Eval("Id")%>' runat="server" onserverclick="a_ServerClick" class="row">
-                                            <div class="col-xs-2 not_img">
+                                            <div class="col-md-2 not_img">
                                                 <%--<img src="../assets/dashboard/impnotif_read.png" />--%>
                                                 <img src="<%# Eval("ImagePath") %>" style="width: 60px; height: 70px;" alt="" />
                                             </div>
-                                            <div class="col-xs-10">
+                                            <div class="col-md-10">
                                                 <p>
                                                     <%--<asp:Label ID="lbldescription" runat="server" Text='<%# Eval("Description")%>'></asp:Label>--%>
                                                     <asp:Label ID="lblFrom" runat="server" Text='<%# Eval("From")%>'></asp:Label>
@@ -145,15 +145,15 @@
                         <asp:Button ID="btnreadallannouncements" runat="server" Text="Read All" class="btn btn-info" OnClick="btnreadallannouncements_Click"></asp:Button>
                     </div>--%>
                     </div>
-                    <div class="col-md-8 ">
+                    <div class="col-md-8 " style="overflow-y: scroll; height: 500px;">
                         <div class="tab-content">
                             <div class="tab-pane active" id="ancid" runat="server">
                                 <div class="row">
-                                    <div class="col-xs-2">
+                                    <div class="col-md-2">
                                         <img id="imgSelectedAnnouncementDetails" style="width: 60px; height: 70px;" runat="server" src="" alt="" />
                                         <%--<img src="../assets/announcements/announcements_thumb1.png" />--%>
                                     </div>
-                                    <div class="col-xs-10">
+                                    <div class="col-md-10">
                                         <p>
                                             <asp:Label ID="lblselectedFrom" runat="server" Text=""></asp:Label>
                                         </p>

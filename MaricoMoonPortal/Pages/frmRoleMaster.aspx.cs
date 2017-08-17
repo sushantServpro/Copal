@@ -28,8 +28,11 @@ namespace MySpace.Pages
         private void BindGrid()
         {
             DataSet dt = bussrole.GetUserRole(appr);
-            gvRoleMaster.DataSource = dt;
-            gvRoleMaster.DataBind();
+            if (dt.Tables.Count > 0)
+            {
+                gvRoleMaster.DataSource = dt;
+                gvRoleMaster.DataBind();
+            }
         }
 
         //public void BindRole()

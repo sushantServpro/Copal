@@ -38,8 +38,11 @@ namespace MySpace.Pages
             liAccessPolicies.Attributes.Add("class", liAccessPolicies.Attributes["class"] + "active");
 
             DataSet dsAccessPolicies = bussAccPol.getAccessPolicies();
-            RepeaterAccessPolicies.DataSource = dsAccessPolicies;
-            RepeaterAccessPolicies.DataBind();
+            if (dsAccessPolicies.Tables.Count > 0)
+            {
+                RepeaterAccessPolicies.DataSource = dsAccessPolicies;
+                RepeaterAccessPolicies.DataBind();
+            }
         }
 
         protected void ancliAccessDrive_ServerClick(object sender, EventArgs e)

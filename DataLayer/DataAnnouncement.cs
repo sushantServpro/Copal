@@ -23,7 +23,7 @@ namespace DataLayer
             return c.GetData("Proc_GetAllAnnouncements", ref cmd, out ErrorMessage);
         }
 
-        public int InsertAnnouncement(string heading, string description, string ImagePath, string ImageName)
+        public int InsertAnnouncement(string heading, string description, string ImagePath, string ImageName,string strFrom)
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.StoredProcedure;
@@ -31,6 +31,7 @@ namespace DataLayer
             cmd.Parameters.AddWithValue("Description", description);
             cmd.Parameters.AddWithValue("ImagePath", ImagePath);
             cmd.Parameters.AddWithValue("ImageName", ImageName);
+            cmd.Parameters.AddWithValue("From", strFrom);
             return c.SaveData("Proc_InsertAnnouncementDetails", ref cmd, out ErrorMessage);
         }
 
@@ -43,7 +44,7 @@ namespace DataLayer
             return c.SaveData("Proc_UpdateAnnouncementFlag", ref cmd, out ErrorMessage);
         }
 
-        public int UpdateAnnouncementDetails(string id, string heading, string descp, string ImagePath, string ImageName)
+        public int UpdateAnnouncementDetails(string id, string heading, string descp, string ImagePath, string ImageName,string strFrom)
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.StoredProcedure;
@@ -52,6 +53,7 @@ namespace DataLayer
             cmd.Parameters.AddWithValue("Description", descp);
             cmd.Parameters.AddWithValue("ImagePath", ImagePath);
             cmd.Parameters.AddWithValue("ImageName", ImageName);
+            cmd.Parameters.AddWithValue("From", strFrom);
             return c.SaveData("Proc_UpdateAnnouncementdetails", ref cmd, out ErrorMessage);
         }
 

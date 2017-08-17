@@ -43,8 +43,12 @@
   <ItemGroup>
     <Compile Include="Common.cs" />
     <Compile Include="DataAccessPolicies.cs" />
+    <Compile Include="DataCompanySurvey.cs" />
+    <Compile Include="DataCompRules.cs" />
     <Compile Include="DataCorporateEvent.cs" />
     <Compile Include="DataAnnouncement.cs" />
+    <Compile Include="DataGoogleSurvey.cs" />
+    <Compile Include="DataGoogleTips.cs" />
     <Compile Include="DataGroupActivitySubTab.cs" />
     <Compile Include="DataGroupActivityTab.cs" />
     <Compile Include="DataImp.cs" />

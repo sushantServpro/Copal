@@ -8,6 +8,7 @@ using System.Web.UI.WebControls;
 using BussLayer;
 using AppLayer;
 using System.IO;
+using System.Globalization;
 
 
 namespace MySpace.Pages
@@ -32,8 +33,11 @@ namespace MySpace.Pages
             pnlgrid.Visible = true;
             appEvent.Id = Id;
             DataSet dt = bussEvent.GetAllCorporateEvent(appEvent);
-            gvCorporateEvent.DataSource = dt;
-            gvCorporateEvent.DataBind();
+            if (dt.Tables.Count > 0)
+            {
+                gvCorporateEvent.DataSource = dt;
+                gvCorporateEvent.DataBind();
+            }
         }
 
         protected void btnsearch_Click(object sender, EventArgs e)
@@ -45,8 +49,11 @@ namespace MySpace.Pages
         {
             DataSet dtUserDetails = new DataSet();
             dtUserDetails = bussEvent.SearchCorporateEvent(txtsearch.Value);
-            gvCorporateEvent.DataSource = dtUserDetails;
-            gvCorporateEvent.DataBind();
+            if (dtUserDetails.Tables.Count > 0)
+            {
+                gvCorporateEvent.DataSource = dtUserDetails;
+                gvCorporateEvent.DataBind();
+            }
         }
 
         protected void btnNewCorporateEventMaster_Click(object sender, EventArgs e)
@@ -74,9 +81,11 @@ namespace MySpace.Pages
                 StatusLabel.Text = "Upload status: The file has to be less than 100 kb!";
                 //return;
             }
+            string strEventDate = Eventdatepicker.Value;
+            DateTime eventDate = DateTime.ParseExact(strEventDate, "MM/dd/yyyy", CultureInfo.InvariantCulture);
 
             //int s = bussEvent.InsertCorporateEvent(fileName, filepath, txtHeaderName.Value, txtHeaderDescription.Value, txtLocation.Value, txtTimings.Value);
-            int s = bussEvent.InsertCorporateEvent(fileName, strImagePath, txtHeaderName.Value, txtHeaderDescription.Value, txtLocation.Value, txtTimings.Value);
+            int s = bussEvent.InsertCorporateEvent(fileName, strImagePath, txtHeaderName.Value, txtHeaderDescription.Value, txtLocation.Value, txtTimings.Value, eventDate);
 
             BindGrid("");
         }
@@ -113,6 +122,9 @@ namespace MySpace.Pages
             TextBox txtLocation = gvCorporateEvent.Rows[e.RowIndex].FindControl("txtLocation") as TextBox;
             TextBox txtTimings = gvCorporateEvent.Rows[e.RowIndex].FindControl("txtTimings") as TextBox;
             FileUpload FileUpload1 = (FileUpload)gvCorporateEvent.Rows[e.RowIndex].FindControl("FileUpload1");
+            TextBox txtEventDate = (TextBox)gvCorporateEvent.Rows[e.RowIndex].FindControl("txtEditEventDate") as TextBox;
+
+            DateTime dtEventDate = DateTime.ParseExact(txtEventDate.Text, "MM/dd/yyyy", CultureInfo.InvariantCulture);
 
             string filename = "";
             string strImagePath = "";
@@ -131,7 +143,7 @@ namespace MySpace.Pages
                 strImagePath = img.ImageUrl;
             }
 
-            int intEventUpateStatus = bussEvent.UpdateCorporateEvent(id.Text, filename, strImagePath, txtHeaderName.Text, txtHeaderDescription.Text, txtLocation.Text, txtTimings.Text);
+            int intEventUpateStatus = bussEvent.UpdateCorporateEvent(id.Text, filename, strImagePath, txtHeaderName.Text, txtHeaderDescription.Text, txtLocation.Text, txtTimings.Text, dtEventDate);
 
             gvCorporateEvent.EditIndex = -1;
             BindGrid("");

@@ -18,9 +18,9 @@ namespace BussLayer
             return dann.GetAllImpNotifications(id);
         }
 
-        public int InsertImpNotification(string heading, string description, string strImagePath, string strImageName)
+        public int InsertImpNotification(string heading, string description, string strImagePath, string strImageName, string strFrom)
         {
-            return dann.InsertImpNotification(heading, description,strImagePath,strImageName);
+            return dann.InsertImpNotification(heading, description,strImagePath,strImageName,strFrom);
         }
 
         public int UpdateImpNotificationFlag(string id, int flag)
@@ -28,9 +28,9 @@ namespace BussLayer
             return dann.UpdateImpNotificationFlag(id, flag);
         }
 
-        public int UpdateNotificationDetails(string id, string heading, string descp, string strImagePath, string strImageName)
+        public int UpdateNotificationDetails(string id, string heading, string descp, string strImagePath, string strImageName,string strFrom)
         {
-            return dann.UpdateNotificationDetails(id, heading, descp,strImagePath,strImageName);
+            return dann.UpdateNotificationDetails(id, heading, descp,strImagePath,strImageName,strFrom);
         }
 
         public DataSet SearchNotificationDetails(string search)

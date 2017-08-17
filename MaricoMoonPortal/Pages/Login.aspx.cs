@@ -56,6 +56,20 @@ namespace MySpacePortal.Pages
                         //Response.Redirect("frmApplicationStage1.aspx?LeadNo=" + ds.Tables[0].Rows[0]["LeadNo"].ToString() + "", false);
                     }
 
+                    if (UserTypeId == "3")
+                    {
+                        Session["UserName"] = ds.Tables[0].Rows[0]["UserName"].ToString();
+                        Session["Designation"] = ds.Tables[0].Rows[0]["Designation"].ToString();
+                        Response.Redirect("Dashboard.aspx", true);
+                        //Response.Redirect("frmApplicationStage1.aspx?LeadNo=" + ds.Tables[0].Rows[0]["LeadNo"].ToString() + "", false);
+                    }
+                    if (UserTypeId == "4")
+                    {
+                        Session["UserName"] = ds.Tables[0].Rows[0]["UserName"].ToString();
+                        Session["Designation"] = ds.Tables[0].Rows[0]["Designation"].ToString();
+                        Response.Redirect("Dashboard.aspx", true);
+                        //Response.Redirect("frmApplicationStage1.aspx?LeadNo=" + ds.Tables[0].Rows[0]["LeadNo"].ToString() + "", false);
+                    }
                     if (UserTypeId == "5")
                     {
                         Session["UserName"] = ds.Tables[0].Rows[0]["UserName"].ToString();

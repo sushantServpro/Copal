@@ -33,7 +33,7 @@ namespace DataLayer
             return c.GetData("Proc_GetSearchCorporateEvents", ref cmd, out ErrorMessage);
         }
 
-        public int InsertCorporateEvent(string ImageName, string ImagePath, string HeaderName, string HeaderDescription, string Location, string Timings)
+        public int InsertCorporateEvent(string ImageName, string ImagePath, string HeaderName, string HeaderDescription, string Location, string Timings,DateTime EventDate)
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.StoredProcedure;
@@ -43,10 +43,11 @@ namespace DataLayer
             cmd.Parameters.AddWithValue("Timings", Timings);
             cmd.Parameters.AddWithValue("ImageName", ImageName);
             cmd.Parameters.AddWithValue("ImagePath", ImagePath);
+            cmd.Parameters.AddWithValue("EventDate", EventDate);
             return c.SaveData("Proc_InsertCorporateEvent", ref cmd, out ErrorMessage);
         }
 
-        public int UpdateCorporateEvent(string ID,string ImageName, string ImagePath, string HeaderName, string HeaderDescription, string Location, string Timings)
+        public int UpdateCorporateEvent(string ID,string ImageName, string ImagePath, string HeaderName, string HeaderDescription, string Location, string Timings,DateTime EventDate)
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.StoredProcedure;
@@ -58,7 +59,7 @@ namespace DataLayer
             cmd.Parameters.AddWithValue("Timings", Timings);
             cmd.Parameters.AddWithValue("ImageName", ImageName);
             cmd.Parameters.AddWithValue("ImagePath", ImagePath);
-
+            cmd.Parameters.AddWithValue("EventDate", EventDate);
             return c.SaveData("Proc_UpdateCorporateEvent", ref cmd, out ErrorMessage);
         }
     }

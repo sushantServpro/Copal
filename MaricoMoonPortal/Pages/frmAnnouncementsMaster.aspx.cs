@@ -69,6 +69,7 @@ namespace MySpace.Pages
             TextBox txtheading = gvAnnounceMaster.Rows[e.RowIndex].FindControl("txtheading") as TextBox;
             TextBox txtdescp = gvAnnounceMaster.Rows[e.RowIndex].FindControl("txtdescp") as TextBox;
             FileUpload FileUpload1 = (FileUpload)gvAnnounceMaster.Rows[e.RowIndex].FindControl("FileUpload1");
+            TextBox txtEditFrom = gvAnnounceMaster.Rows[e.RowIndex].FindControl("txtEditFrom") as TextBox;
 
             string filename = "";
             string strImagePath = "";
@@ -88,7 +89,7 @@ namespace MySpace.Pages
             }
 
             //Updating records
-            int ds = bussann.UpdateAnnouncementDetails(id.Text, txtheading.Text, txtdescp.Text, strImagePath, filename);
+            int ds = bussann.UpdateAnnouncementDetails(id.Text, txtheading.Text, txtdescp.Text, strImagePath, filename, txtEditFrom.Text);
 
             //Setting the EditIndex property to -1 to cancel the Edit mode in Gridview  
             gvAnnounceMaster.EditIndex = -1;
@@ -155,7 +156,7 @@ namespace MySpace.Pages
             {
                 StatusLabel.Text = "Upload status: The file could not be uploaded. The following error occured: " + ex.Message;
             }
-            int s = bussann.InsertAnnouncement(txtheading.Text, txtdescp.Text, strImagePath, filename);
+            int s = bussann.InsertAnnouncement(txtheading.Text, txtdescp.Text, strImagePath, filename,txtFrom.Text);
             BindGrid();
             clear();
         }

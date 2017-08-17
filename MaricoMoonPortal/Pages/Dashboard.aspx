@@ -19,12 +19,12 @@
                     </div>
                     <div class="prof_info">
                         <div class="row">
-                            <div class="col-sm-3 prof_img">
+                            <div class="col-md-3 prof_img">
                                 <asp:Image ID="Image1" runat="server" Width="96px" Height="100px" class="img-circle" />
                                 <%-- <img src='<%=HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Authority) + HttpRuntime.AppDomainAppVirtualPath%>//EmployeeImages/<%# (Eval("ImageName") != System.DBNull.Value ? "" + (Eval("ImageName")) : "NULL") %>'/>--%>
                                 <%--<img src="../assets/dashboard/profile.png" class="img-circle" alt="User Image">--%>
                             </div>
-                            <div class="col-sm-9 prof_desc">
+                            <div class="col-md-9 prof_desc">
                                 <div class="prof_name">
                                     <span>
                                         <label id="lblusername" runat="server"></label>
@@ -33,25 +33,25 @@
                                 </div>
                                 <div class="emp_detail row">
                                     <ul class="nav navbar-nav row">
-                                        <li class="col-xs-6">
+                                        <li class="col-md-6">
                                             <span>
                                                 <img src="../assets/dashboard/designation_icon.png" />
                                                 <label id="lbldesignation" runat="server"></label>
                                             </span>
                                         </li>
-                                        <li class="col-xs-6">
+                                        <li class="col-md-6">
                                             <span>
                                                 <img src="../assets/dashboard/place_icon.png" />
                                                 <label id="lbllocation" runat="server"></label>
                                             </span>
                                         </li>
-                                        <li class="col-xs-6">
+                                        <li class="col-md-6">
                                             <span>
                                                 <img src="../assets/dashboard/department_icon.png" />
                                                 <label id="lbldept" runat="server"></label>
                                             </span>
                                         </li>
-                                        <li class="col-xs-6">
+                                        <li class="col-md-6">
                                             <span>
                                                 <img src="../assets/dashboard/private_icon.png" />
                                                 <label>Private</label>
@@ -143,11 +143,11 @@
                             <ItemTemplate>
                                 <li id="liann" runat="server" title="">
                                     <a href="#" class="row">
-                                        <div class="col-xs-2 not_img" >
+                                        <div class="col-md-2 not_img" >
                                             <%--<img src="../assets/dashboard/impnotif_read.png" />--%>
                                             <img src="<%# Eval("ImagePath") %>" style="width: 60px; height: 70px;" alt="" />
                                         </div>
-                                        <div class="col-xs-10">
+                                        <div class="col-md-10">
                                             <h6>
                                                 <asp:Label ID="lblheading" runat="server" Text='<%# Eval("Heading")%>'></asp:Label>
                                                 <br/><asp:Label ID="lblCreatedDateTime" runat="server" Text='<%#Eval("CreatedDatetime") %>'>'></asp:Label>
@@ -176,11 +176,11 @@
                             <ItemTemplate>
                                 <li>
                                     <a href="#" class="row">
-                                        <div class="col-xs-2 not_img">
+                                        <div class="col-md-2 not_img">
                                             <%--<img src="../assets/dashboard/impnotif_read.png" />--%>
-                                            <img src="<%# Eval("ImagePath") %>" alt="" />
+                                            <img src="<%# Eval("ImagePath") %>" style="width: 60px; height: 70px;" alt="" />
                                         </div>
-                                        <div class="col-xs-10">
+                                        <div class="col-md-10">
                                             <h6>
                                                 <asp:Label ID="lblheading" runat="server" Text='<%# Eval("Heading")%>'></asp:Label>
                                                 <br />

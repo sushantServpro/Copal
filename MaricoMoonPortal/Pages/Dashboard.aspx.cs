@@ -162,12 +162,12 @@ namespace MySpacePortal.Pages
 
         protected void btnreadallannouncements_Click(object sender, EventArgs e)
         {
-            Response.Redirect("frmAnnouncementsMaster.aspx");
+            Response.Redirect("announcements.aspx");
         }
 
         protected void btnreadimpnoti_Click(object sender, EventArgs e)
         {
-            Response.Redirect("frmImpNotification.aspx");
+            Response.Redirect("imp_notifications.aspx");
         }
     }
 }

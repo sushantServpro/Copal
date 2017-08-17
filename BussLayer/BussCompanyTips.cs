@@ -26,11 +26,21 @@ namespace BussLayer
         /// <summary>
         /// Insert Company Tips records in Database through DataLayer
         /// </summary>
-        /// <param name="obj">Company Tips App Layer Object</param>
+        /// <param name="obj">App Layer Object</param>
         /// <returns>Insert Status</returns>
         public int insertCompanyTips(AppCompanyTips obj)
         {
             return dCompTips.InsertCompanyTips(obj);
+        }
+
+        /// <summary>
+        /// Update Company Tips records in Database through DataLayer
+        /// </summary>
+        /// <param name="obj">App Layer Object</param>
+        /// <returns>Update Status</returns>
+        public int updateCompanyTips(AppCompanyTips obj)
+        {
+            return dCompTips.UpdateCompanyTips(obj);
         }
     }
 }
