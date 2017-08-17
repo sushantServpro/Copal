@@ -1,0 +1,48 @@
+-----------Details on  5/6/2017 1:05:11 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Date: 5/6/2017 1:05:11 PM
+
+Message : System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'StockI'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at MaricoMoonPortal.Pages.frmStockDetails.BindGrid() in D:\Suraj\MaricoMoonPortal\MaricoMoonPortal\Pages\frmStockDetails.aspx.cs:line 34
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Details on  5/6/2017 1:05:57 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Date: 5/6/2017 1:05:57 PM
+
+Message : System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'StockI'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at MaricoMoonPortal.Pages.frmStockDetails.BindGrid() in D:\Suraj\MaricoMoonPortal\MaricoMoonPortal\Pages\frmStockDetails.aspx.cs:line 34
+
+
+--------------------------------*End*------------------------------------------
+
+
+

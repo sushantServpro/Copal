@@ -1,0 +1,11 @@
+LOGIN
+
+username blue	: 01abc8
+login green	: a5d647
+
+
+DASHBOARD
+
+Navbar Gradient : 0890cc  -  00bacc (Use wherever necessary)
+text in blue	: 01abc8
+buttons in blue	: 01abc8

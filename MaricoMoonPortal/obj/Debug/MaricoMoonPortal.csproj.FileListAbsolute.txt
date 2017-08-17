@@ -1,0 +1,14 @@
+D:\Suraj\MaricoMoonPortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.csproj.App.config
+D:\Suraj\MaricoMoonPortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.csprojResolveAssemblyReference.cache
+D:\Suraj\MaricoMoonPortal\MaricoMoonPortal\bin\ApplicationInsights.config
+D:\Suraj\MaricoMoonPortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll.config
+D:\Suraj\MaricoMoonPortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll
+D:\Suraj\MaricoMoonPortal\MaricoMoonPortal\bin\MaricoMoonPortal.pdb
+D:\Suraj\MaricoMoonPortal\MaricoMoonPortal\bin\AppLayer.dll
+D:\Suraj\MaricoMoonPortal\MaricoMoonPortal\bin\BussLayer.dll
+D:\Suraj\MaricoMoonPortal\MaricoMoonPortal\bin\DataLayer.dll
+D:\Suraj\MaricoMoonPortal\MaricoMoonPortal\bin\AppLayer.pdb
+D:\Suraj\MaricoMoonPortal\MaricoMoonPortal\bin\BussLayer.pdb
+D:\Suraj\MaricoMoonPortal\MaricoMoonPortal\bin\DataLayer.pdb
+D:\Suraj\MaricoMoonPortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.dll
+D:\Suraj\MaricoMoonPortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.pdb

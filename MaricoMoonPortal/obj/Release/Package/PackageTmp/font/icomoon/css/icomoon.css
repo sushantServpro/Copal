@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?jskwsy');
+    src:    url('../fonts/icomoon.eot?jskwsy#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?jskwsy') format('truetype'),
+        url('../fonts/icomoon.woff?jskwsy') format('woff'),
+        url('../fonts/icomoon.svg?jskwsy#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-rupees:before {
+    content: "\e932";
+}
+.icon-red-badge:before {
+    content: "\e92e";
+}
+.icon-bulletin-icon-new:before {
+    content: "\e931";
+}
+.icon-bulletin-icon3:before {
+    content: "\e930";
+}
+.icon-bulletin-icon2:before {
+    content: "\e92f";
+}
+.icon-plus-icon:before {
+    content: "\e92d";
+}
+.icon-account-query-icon:before {
+    content: "\e900";
+}
+.icon-accounts-icon:before {
+    content: "\e901";
+}
+.icon-asset-library-icon:before {
+    content: "\e902";
+}
+.icon-blinds-icon:before {
+    content: "\e903";
+}
+.icon-bulletin-icon:before {
+    content: "\e904";
+}
+.icon-cal-icon:before {
+    content: "\e905";
+}
+.icon-cart-icon:before {
+    content: "\e906";
+}
+.icon-chat-icon:before {
+    content: "\e907";
+}
+.icon-close-icon:before {
+    content: "\e908";
+}
+.icon-dashboard-icon:before {
+    content: "\e909";
+}
+.icon-delete-icon:before {
+    content: "\e90a";
+}
+.icon-discount-icon:before {
+    content: "\e90b";
+}
+.icon-down-arrow-icon:before {
+    content: "\e90c";
+}
+.icon-download-icon:before {
+    content: "\e90d";
+}
+.icon-edit-icon:before {
+    content: "\e90e";
+}
+.icon-events-icon:before {
+    content: "\e90f";
+}
+.icon-fabric-cal-icon:before {
+    content: "\e910";
+}
+.icon-filter-icon:before {
+    content: "\e911";
+}
+.icon-freebies-icon:before {
+    content: "\e912";
+}
+.icon-help-icon:before {
+    content: "\e913";
+}
+.icon-import-icon:before {
+    content: "\e914";
+}
+.icon-invoice-archive-icon:before {
+    content: "\e915";
+}
+.icon-list-icon:before {
+    content: "\e916";
+}
+.icon-menu-icon:before {
+    content: "\e917";
+}
+.icon-minus-icon:before {
+    content: "\e918";
+}
+.icon-my-orders-icon:before {
+    content: "\e919";
+}
+.icon-new-collections-icon:before {
+    content: "\e91a";
+}
+.icon-notification-icon:before {
+    content: "\e91b";
+}
+.icon-order-query-icon:before {
+    content: "\e91c";
+}
+.icon-price-list-icon:before {
+    content: "\e91d";
+}
+.icon-print-icon:before {
+    content: "\e91e";
+}
+.icon-product-query-icon:before {
+    content: "\e91f";
+}
+.icon-products-icon:before {
+    content: "\e920";
+}
+.icon-refresh-icon:before {
+    content: "\e921";
+}
+.icon-reload-icon:before {
+    content: "\e922";
+}
+.icon-re-order-icon:before {
+    content: "\e923";
+}
+.icon-return-policy-icon:before {
+    content: "\e924";
+}
+.icon-search-icon:before {
+    content: "\e925";
+}
+.icon-share-icon:before {
+    content: "\e926";
+}
+.icon-sort-icon:before {
+    content: "\e927";
+}
+.icon-support-icon:before {
+    content: "\e928";
+}
+.icon-technical-query-icon:before {
+    content: "\e929";
+}
+.icon-to-do-list-icon:before {
+    content: "\e92a";
+}
+.icon-traingle-icon:before {
+    content: "\e92b";
+}
+.icon-user-mgmnt-icon:before {
+    content: "\e92c";
+}
+

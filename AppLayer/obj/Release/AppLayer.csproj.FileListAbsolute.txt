@@ -1,0 +1,15 @@
+D:\Akshata\MySpace\MySpaceP\MySpacePortal\AppLayer\bin\Release\AppLayer.dll
+D:\Akshata\MySpace\MySpaceP\MySpacePortal\AppLayer\bin\Release\AppLayer.pdb
+D:\Akshata\MySpace\MySpaceP\MySpacePortal\AppLayer\obj\Release\AppLayer.csprojResolveAssemblyReference.cache
+D:\Akshata\MySpace\MySpaceP\MySpacePortal\AppLayer\obj\Release\AppLayer.dll
+D:\Akshata\MySpace\MySpaceP\MySpacePortal\AppLayer\obj\Release\AppLayer.pdb
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\AppLayer\bin\Release\AppLayer.dll
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\AppLayer\bin\Release\AppLayer.pdb
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\AppLayer\obj\Release\AppLayer.csprojResolveAssemblyReference.cache
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\AppLayer\obj\Release\AppLayer.dll
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\AppLayer\obj\Release\AppLayer.pdb
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\AppLayer\bin\Release\AppLayer.dll
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\AppLayer\bin\Release\AppLayer.pdb
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\AppLayer\obj\Release\AppLayer.csprojResolveAssemblyReference.cache
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\AppLayer\obj\Release\AppLayer.dll
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\AppLayer\obj\Release\AppLayer.pdb

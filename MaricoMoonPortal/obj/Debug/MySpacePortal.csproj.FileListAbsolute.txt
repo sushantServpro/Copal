@@ -1,0 +1,168 @@
+D:\Akshata\MySpace\MaricoMoonPortal\MaricoMoonPortal\MaricoMoonPortal\bin\ApplicationInsights.config
+D:\Akshata\MySpace\MaricoMoonPortal\MaricoMoonPortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll.config
+D:\Akshata\MySpace\MaricoMoonPortal\MaricoMoonPortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll
+D:\Akshata\MySpace\MaricoMoonPortal\MaricoMoonPortal\MaricoMoonPortal\bin\MaricoMoonPortal.pdb
+D:\Akshata\MySpace\MaricoMoonPortal\MaricoMoonPortal\MaricoMoonPortal\bin\AppLayer.dll
+D:\Akshata\MySpace\MaricoMoonPortal\MaricoMoonPortal\MaricoMoonPortal\bin\BussLayer.dll
+D:\Akshata\MySpace\MaricoMoonPortal\MaricoMoonPortal\MaricoMoonPortal\bin\DataLayer.dll
+D:\Akshata\MySpace\MaricoMoonPortal\MaricoMoonPortal\MaricoMoonPortal\bin\AppLayer.pdb
+D:\Akshata\MySpace\MaricoMoonPortal\MaricoMoonPortal\MaricoMoonPortal\bin\BussLayer.pdb
+D:\Akshata\MySpace\MaricoMoonPortal\MaricoMoonPortal\MaricoMoonPortal\bin\DataLayer.pdb
+D:\Akshata\MySpace\MaricoMoonPortal\MaricoMoonPortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csproj.App.config
+D:\Akshata\MySpace\MaricoMoonPortal\MaricoMoonPortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csprojResolveAssemblyReference.cache
+D:\Akshata\MySpace\MaricoMoonPortal\MaricoMoonPortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.dll
+D:\Akshata\MySpace\MaricoMoonPortal\MaricoMoonPortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.pdb
+D:\Akshata\MySpace\MySpace\MySpacePortal\MaricoMoonPortal\bin\ApplicationInsights.config
+D:\Akshata\MySpace\MySpace\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll.config
+D:\Akshata\MySpace\MySpace\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll
+D:\Akshata\MySpace\MySpace\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.pdb
+D:\Akshata\MySpace\MySpace\MySpacePortal\MaricoMoonPortal\bin\AppLayer.dll
+D:\Akshata\MySpace\MySpace\MySpacePortal\MaricoMoonPortal\bin\BussLayer.dll
+D:\Akshata\MySpace\MySpace\MySpacePortal\MaricoMoonPortal\bin\DataLayer.dll
+D:\Akshata\MySpace\MySpace\MySpacePortal\MaricoMoonPortal\bin\AppLayer.pdb
+D:\Akshata\MySpace\MySpace\MySpacePortal\MaricoMoonPortal\bin\BussLayer.pdb
+D:\Akshata\MySpace\MySpace\MySpacePortal\MaricoMoonPortal\bin\DataLayer.pdb
+D:\Akshata\MySpace\MySpace\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csproj.App.config
+D:\Akshata\MySpace\MySpace\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csprojResolveAssemblyReference.cache
+D:\Akshata\MySpace\MySpace\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.dll
+D:\Akshata\MySpace\MySpace\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.pdb
+D:\Sushant\My Work\My_Space\MySpacePortal\MySpacePortal\MaricoMoonPortal\bin\ApplicationInsights.config
+D:\Sushant\My Work\My_Space\MySpacePortal\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll.config
+D:\Sushant\My Work\My_Space\MySpacePortal\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll
+D:\Sushant\My Work\My_Space\MySpacePortal\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.pdb
+D:\Sushant\My Work\My_Space\MySpacePortal\MySpacePortal\MaricoMoonPortal\bin\AppLayer.dll
+D:\Sushant\My Work\My_Space\MySpacePortal\MySpacePortal\MaricoMoonPortal\bin\BussLayer.dll
+D:\Sushant\My Work\My_Space\MySpacePortal\MySpacePortal\MaricoMoonPortal\bin\DataLayer.dll
+D:\Sushant\My Work\My_Space\MySpacePortal\MySpacePortal\MaricoMoonPortal\bin\AppLayer.pdb
+D:\Sushant\My Work\My_Space\MySpacePortal\MySpacePortal\MaricoMoonPortal\bin\BussLayer.pdb
+D:\Sushant\My Work\My_Space\MySpacePortal\MySpacePortal\MaricoMoonPortal\bin\DataLayer.pdb
+D:\Sushant\My Work\My_Space\MySpacePortal\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csproj.App.config
+D:\Sushant\My Work\My_Space\MySpacePortal\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csprojResolveAssemblyReference.cache
+D:\Sushant\My Work\My_Space\MySpacePortal\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.dll
+D:\Sushant\My Work\My_Space\MySpacePortal\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.pdb
+D:\Akshata\MySpace\MySpaceP\MySpacePortal\MaricoMoonPortal\bin\ApplicationInsights.config
+D:\Akshata\MySpace\MySpaceP\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll.config
+D:\Akshata\MySpace\MySpaceP\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll
+D:\Akshata\MySpace\MySpaceP\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.pdb
+D:\Akshata\MySpace\MySpaceP\MySpacePortal\MaricoMoonPortal\bin\AppLayer.dll
+D:\Akshata\MySpace\MySpaceP\MySpacePortal\MaricoMoonPortal\bin\BussLayer.dll
+D:\Akshata\MySpace\MySpaceP\MySpacePortal\MaricoMoonPortal\bin\DataLayer.dll
+D:\Akshata\MySpace\MySpaceP\MySpacePortal\MaricoMoonPortal\bin\AppLayer.pdb
+D:\Akshata\MySpace\MySpaceP\MySpacePortal\MaricoMoonPortal\bin\BussLayer.pdb
+D:\Akshata\MySpace\MySpaceP\MySpacePortal\MaricoMoonPortal\bin\DataLayer.pdb
+D:\Akshata\MySpace\MySpaceP\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csproj.App.config
+D:\Akshata\MySpace\MySpaceP\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csprojResolveAssemblyReference.cache
+D:\Akshata\MySpace\MySpaceP\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.dll
+D:\Akshata\MySpace\MySpaceP\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.pdb
+D:\Sushant\My Work\My_Space\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\ApplicationInsights.config
+D:\Sushant\My Work\My_Space\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll.config
+D:\Sushant\My Work\My_Space\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll
+D:\Sushant\My Work\My_Space\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.pdb
+D:\Sushant\My Work\My_Space\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\AppLayer.dll
+D:\Sushant\My Work\My_Space\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\BussLayer.dll
+D:\Sushant\My Work\My_Space\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\DataLayer.dll
+D:\Sushant\My Work\My_Space\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\AppLayer.pdb
+D:\Sushant\My Work\My_Space\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\BussLayer.pdb
+D:\Sushant\My Work\My_Space\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\DataLayer.pdb
+D:\Sushant\My Work\My_Space\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csproj.App.config
+D:\Sushant\My Work\My_Space\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csprojResolveAssemblyReference.cache
+D:\Sushant\My Work\My_Space\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.dll
+D:\Sushant\My Work\My_Space\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.pdb
+D:\Akshata\MySpacePortal(15062017)\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\ApplicationInsights.config
+D:\Akshata\MySpacePortal(15062017)\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll.config
+D:\Akshata\MySpacePortal(15062017)\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll
+D:\Akshata\MySpacePortal(15062017)\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.pdb
+D:\Akshata\MySpacePortal(15062017)\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\AppLayer.dll
+D:\Akshata\MySpacePortal(15062017)\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\BussLayer.dll
+D:\Akshata\MySpacePortal(15062017)\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\DataLayer.dll
+D:\Akshata\MySpacePortal(15062017)\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\AppLayer.pdb
+D:\Akshata\MySpacePortal(15062017)\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\BussLayer.pdb
+D:\Akshata\MySpacePortal(15062017)\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\bin\DataLayer.pdb
+D:\Akshata\MySpacePortal(15062017)\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csproj.App.config
+D:\Akshata\MySpacePortal(15062017)\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csprojResolveAssemblyReference.cache
+D:\Akshata\MySpacePortal(15062017)\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.dll
+D:\Akshata\MySpacePortal(15062017)\MySpacePortal(13062017)\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.pdb
+D:\Portal\MySpacePortal(27062017)\MySpacePortal\MaricoMoonPortal\bin\ApplicationInsights.config
+D:\Portal\MySpacePortal(27062017)\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll.config
+D:\Portal\MySpacePortal(27062017)\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll
+D:\Portal\MySpacePortal(27062017)\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.pdb
+D:\Portal\MySpacePortal(27062017)\MySpacePortal\MaricoMoonPortal\bin\AppLayer.dll
+D:\Portal\MySpacePortal(27062017)\MySpacePortal\MaricoMoonPortal\bin\BussLayer.dll
+D:\Portal\MySpacePortal(27062017)\MySpacePortal\MaricoMoonPortal\bin\DataLayer.dll
+D:\Portal\MySpacePortal(27062017)\MySpacePortal\MaricoMoonPortal\bin\AppLayer.pdb
+D:\Portal\MySpacePortal(27062017)\MySpacePortal\MaricoMoonPortal\bin\BussLayer.pdb
+D:\Portal\MySpacePortal(27062017)\MySpacePortal\MaricoMoonPortal\bin\DataLayer.pdb
+D:\Portal\MySpacePortal(27062017)\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csproj.App.config
+D:\Portal\MySpacePortal(27062017)\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csprojResolveAssemblyReference.cache
+D:\Portal\MySpacePortal(27062017)\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.dll
+D:\Portal\MySpacePortal(27062017)\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.pdb
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\MaricoMoonPortal\bin\ApplicationInsights.config
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll.config
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.pdb
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\MaricoMoonPortal\bin\AppLayer.dll
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\MaricoMoonPortal\bin\BussLayer.dll
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\MaricoMoonPortal\bin\DataLayer.dll
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\MaricoMoonPortal\bin\Newtonsoft.Json.dll
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\MaricoMoonPortal\bin\RestSharp.dll
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\MaricoMoonPortal\bin\AppLayer.pdb
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\MaricoMoonPortal\bin\BussLayer.pdb
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\MaricoMoonPortal\bin\DataLayer.pdb
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\MaricoMoonPortal\bin\Newtonsoft.Json.xml
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\MaricoMoonPortal\bin\RestSharp.xml
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csproj.App.config
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csprojResolveAssemblyReference.cache
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.dll
+D:\Akshata\MySpace\MySpacePortal(30062017)\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.pdb
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\MaricoMoonPortal\bin\ApplicationInsights.config
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll.config
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.pdb
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\MaricoMoonPortal\bin\AppLayer.dll
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\MaricoMoonPortal\bin\BussLayer.dll
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\MaricoMoonPortal\bin\DataLayer.dll
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\MaricoMoonPortal\bin\Newtonsoft.Json.dll
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\MaricoMoonPortal\bin\RestSharp.dll
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\MaricoMoonPortal\bin\AppLayer.pdb
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\MaricoMoonPortal\bin\BussLayer.pdb
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\MaricoMoonPortal\bin\DataLayer.pdb
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\MaricoMoonPortal\bin\Newtonsoft.Json.xml
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\MaricoMoonPortal\bin\RestSharp.xml
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csproj.App.config
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csprojResolveAssemblyReference.cache
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.dll
+D:\Ali\Ali\Projects\MySpacePortal_\SourceCode\Code\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.pdb
+F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll.config
+F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll
+F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.pdb
+F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\AppLayer.dll
+F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\BussLayer.dll
+F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\DataLayer.dll
+F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\Newtonsoft.Json.dll
+F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\RestSharp.dll
+F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\AppLayer.pdb
+F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\BussLayer.pdb
+F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\DataLayer.pdb
+F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\Newtonsoft.Json.xml
+F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\RestSharp.xml
+F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csproj.App.config
+F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csprojResolveAssemblyReference.cache
+F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.dll
+F:\Sushant\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.pdb
+D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll.config
+D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.dll
+D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\MaricoMoonPortal.pdb
+D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\AppLayer.dll
+D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\BussLayer.dll
+D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\DataLayer.dll
+D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\Newtonsoft.Json.dll
+D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\RestSharp.dll
+D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\AppLayer.pdb
+D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\BussLayer.pdb
+D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\DataLayer.pdb
+D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\Newtonsoft.Json.xml
+D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\bin\RestSharp.xml
+D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csproj.App.config
+D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\obj\Debug\MySpacePortal.csprojResolveAssemblyReference.cache
+D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.dll
+D:\Sushant\My Work\MySpacePortal_11-08-17\MySpacePortal_11-08-17\MySpacePortal\MaricoMoonPortal\obj\Debug\MaricoMoonPortal.pdb
